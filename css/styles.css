@@ -47,7 +47,7 @@ button:hover, button:focus{
     text-align: left;
     vertical-align: top;
 }
-nav ul li a, header .contacts {
+nav ul li a, .header .contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
@@ -59,7 +59,6 @@ nav ul li a, header .contacts {
 .hero > .container {
     width: 100%;
     height: 600px;
-    background-color: var(--background-color-header-footer);
     
 }
 
@@ -82,4 +81,31 @@ nav ul li a, header .contacts {
     text-align: center;
     vertical-align:middle;
     color: var(--layout-text-color-third);
+    width: 200px;
+    height: 50px;
+}
+
+.footer .container, .hero > .container {
+    background-color: var(--background-color-header-footer);
+}
+
+.footer .container {
+    width: 100%;
+    height: 252px;
+}
+.footer .container address a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 146%;
+    letter-spacing: .03rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+address > ul > li:first-child > a {
+    color: var(--layout-text-color-third);
+}
+
+address > ul > li > a {
+    color: #ffffff3c;
 }
