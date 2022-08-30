@@ -1,3 +1,25 @@
-body {
-    font-family: 'Roboto', sans-serif;
+:root {
+    --text-blue-color: #2196F3;
+    --text-black-color:#212121;
+    --text-white-color:#fff;
+    --text-color-grey: #757575;
+    --background-color-header-footer: #2F303A;
+    --background-color-section: #E5E5E5;
+    --background-color2-section: #F5F4FA;
+
 }
+
+/* body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--app-black-color);
+}
+a:hover, a:focus {
+    text-decoration: underline solid var(--app-blue-color);
+}
+button:hover, button:focus {
+    border: 1px solid var(--app-blue-color);
+}
+a:active, a:active {
+
+    color: var(--app-blue-color);
+} */
