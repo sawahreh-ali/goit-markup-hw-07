@@ -13,13 +13,11 @@ body {
     font-family: 'Roboto', 'Raleway';
     color: var(--text-black-color);
 }
-/* a:hover, a:focus {
-    text-decoration: underline solid var(--app-blue-color);
+a {
+    text-decoration: none;
+    color: var(--text-black-color);
 }
-button:hover, button:focus {
-    border: 1px solid var(--app-blue-color);
-}
-a:active, a:active {
 
-    color: var(--app-blue-color);
-} */
+ul {
+    list-style-type: none;
+}
