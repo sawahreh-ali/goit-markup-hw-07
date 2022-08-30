@@ -9,11 +9,11 @@
 
 }
 
-/* body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--app-black-color);
+body {
+    font-family: 'Roboto', 'Raleway';
+    color: var(--text-black-color);
 }
-a:hover, a:focus {
+/* a:hover, a:focus {
     text-decoration: underline solid var(--app-blue-color);
 }
 button:hover, button:focus {
