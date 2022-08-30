@@ -23,7 +23,7 @@ ul {
     list-style-type: none;
 }
 
-a:hover, a:focus, .contacts a:hover {
+a:hover, a:focus {
     color: var(--layout-text-color-main);
 }
 
@@ -33,7 +33,7 @@ button:hover, button:focus{
     border-color: var(--layout-text-color-main);
 }
 
-.contacts a {
+.contacts {
     color: var(--layout-text-color-fourth);
 }
 
@@ -42,13 +42,21 @@ button:hover, button:focus{
     font-weight: 700;
     font-size: 26px;
     line-height: 100%;
-    letter-spacing: 3%;
+    letter-spacing: .03rem;
     color: var(--layout-text-color-main);
     text-align: left;
     vertical-align: top;
 }
+nav ul li a, header .contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: .02rem;
+    text-align: center;
+    vertical-align: top;
+}
 
-.hero > .container{
+.hero > .container {
     width: 100%;
     height: 600px;
     background-color: var(--background-color-header-footer);
@@ -59,8 +67,19 @@ button:hover, button:focus{
     font-weight: 900;
     font-size: 44px;
     line-height: 116%;
-    letter-spacing: 6%;
+    letter-spacing: .06rem;
     color: var(--layout-text-color-third);
     text-align: center;
     vertical-align: top;
+}
+
+.hero > .container > button {
+    background-color: var(--layout-text-color-main);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: .06rem;
+    text-align: center;
+    vertical-align:middle;
+    color: var(--layout-text-color-third);
 }
