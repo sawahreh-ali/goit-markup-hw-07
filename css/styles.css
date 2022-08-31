@@ -109,3 +109,37 @@ address > ul > li:first-child > a {
 address > ul > li > a {
     color: #ffffff3c;
 }
+
+.hero ~.section:nth-of-type(2), .hero ~.section:nth-of-type(3) {
+    background-color: var(--background-color-section);
+}
+
+.hero ~ .section:nth-of-type(2) h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: .03rem;
+    text-align: left;
+    vertical-align: top;
+}
+.hero ~.section:nth-of-type(2) p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 146%;
+    letter-spacing: .03rem;
+    text-align: left;
+    vertical-align: top;
+    color: var(--layout-text-color-fourth);
+}
+.hero ~.section:nth-of-type(3) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: .03rem;
+    text-align: center;
+    vertical-align: top;
+}
+
+.hero ~.section:nth-of-type(4) {
+    background-color: var(--background-color-section-second);
+}
