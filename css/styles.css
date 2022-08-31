@@ -112,7 +112,7 @@ address > ul > li > a {
     color: #ffffff3c;
 }
 
-.hero ~.section:nth-of-type(2), .hero ~.section:nth-of-type(3) {
+main {
     background-color: var(--background-color-section);
 }
 
@@ -146,7 +146,7 @@ address > ul > li > a {
     background-color: var(--background-color-section-second);
 }
 
-.hero ~.section:nth-of-type(4) ul li {
+.hero ~.section:nth-of-type(4) ul li, .portfolio-ul {
     background-color: var(--layout-text-color-third);
 }
 
@@ -167,4 +167,34 @@ address > ul > li > a {
     color: var(--layout-text-color-fourth);
     text-align: center;
     vertical-align: top;
+}
+
+/* *********************************    Portfolio   ********************************* */
+.section + .container button {
+    height: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 136%;
+    letter-spacing: .03rem;
+    text-align: center;
+    vertical-align: top;
+}
+
+.portfolio-ul h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 171%;
+    letter-spacing: .06rem;
+    text-align: center;
+    vertical-align: top;
+}
+
+.portfolio-ul p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: .03rem;
+    text-align: left;
+    vertical-align: top;
+    color: var(--layout-text-color-fourth);
 }
