@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Roboto', 'Raleway';
+    font-family: 'Roboto', 'Raleway', 'Sans Serif';
     color: var(--layout-text-color-second);
 }
 a {
@@ -23,7 +23,7 @@ ul {
     list-style-type: none;
 }
 
-a:hover, a:focus {
+a:hover, a:focus, address > ul > li:first-child > a:hover {
     color: var(--layout-text-color-main);
 }
 
@@ -31,6 +31,7 @@ button:hover, button:focus{
     background-color: var(--layout-text-color-main);
     color: var(--layout-text-color-third);
     border-color: var(--layout-text-color-main);
+    cursor: pointer;
 }
 
 .contacts {
@@ -105,6 +106,7 @@ nav ul li a, .header .contacts {
 address > ul > li:first-child > a {
     color: var(--layout-text-color-third);
 }
+
 
 address > ul > li > a {
     color: #ffffff3c;
