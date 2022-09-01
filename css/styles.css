@@ -27,6 +27,12 @@ body {
     color: var(--layout-text-color-main);
 }
 
+.button {
+    font-family: 'Roboto', 'Sans Serif';
+    letter-spacing: .03em;
+    background-color: var(--background-color-section-second);
+}
+
 .button:hover, .button:focus{
     background-color: var(--layout-text-color-main);
     color: var(--layout-text-color-third);
@@ -137,7 +143,11 @@ body {
     height: 38px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 136%;
+    line-height: 139%;
+}
+.button-current {
+    background-color: var(--layout-text-color-main);
+    color: var(--layout-text-color-third);
 }
 
 .portfolio-imgs-list .h3 {
