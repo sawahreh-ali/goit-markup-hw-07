@@ -22,7 +22,8 @@ body {
     color: var(--layout-text-color-second);
 }
 
-.link:hover, .link:focus, .address .location-link:hover {
+.link:hover, .link:focus, 
+.footer-list .list-item .link:hover, .footer-list .list-item .link:focus {
     color: var(--layout-text-color-main);
 }
 
@@ -80,13 +81,14 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 146%;
-    color: var(--layout-text-color-third);
-}
-
-
-.footer-list .list-item .link {
     color: #ffffff3c;
 }
+
+
+.footer-list .list-item .location-link {
+    color: var(--layout-text-color-third)
+}
+
 
 .main {
     background-color: var(--background-color-section);
