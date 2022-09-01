@@ -105,7 +105,7 @@ body {
     line-height: 146%;
     color: var(--layout-text-color-fourth);
 }
-.hero .what-we-do-section .h2, .hero .our-team-section .h2 {
+.what-we-do-h2, .our-team-h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
