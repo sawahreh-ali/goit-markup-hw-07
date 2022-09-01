@@ -94,12 +94,12 @@ body {
     background-color: var(--background-color-section);
 }
 
-.hero .features-section .h3 {
+.features-list .list-item .h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
 }
-.hero .features-section .p {
+.features-list .list-item .p {
     font-weight: 400;
     font-size: 14px;
     line-height: 146%;
