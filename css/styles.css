@@ -18,30 +18,22 @@ address { font-style: normal;}
 
 body {
     font-family: 'Roboto', 'Sans Serif';
-    color: var(--layout-text-color-second);
-}
-a {
-    text-decoration: none;
+    letter-spacing: .03em;
     color: var(--layout-text-color-second);
 }
 
-
-ul {
-    list-style-type: none;
-}
-
-a:hover, a:focus, address > ul > li:first-child > a:hover {
+.link:hover, .link:focus, .address .location-link:hover {
     color: var(--layout-text-color-main);
 }
 
-button:hover, button:focus{
+.button:hover, .button:focus{
     background-color: var(--layout-text-color-main);
     color: var(--layout-text-color-third);
     border-color: var(--layout-text-color-main);
     cursor: pointer;
 }
 
-.contacts {
+.contacts-link {
     color: var(--layout-text-color-fourth);
 }
 
@@ -50,158 +42,110 @@ button:hover, button:focus{
     font-weight: 700;
     font-size: 26px;
     line-height: 100%;
-    letter-spacing: .03rem;
+    letter-spacing: .03em;
     color: var(--layout-text-color-main);
-    text-align: left;
-    vertical-align: top;
 }
-nav ul li a, .header .contacts {
+.nav-list .list-item .link, .header .contacts-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
-    letter-spacing: .02rem;
-    text-align: center;
-    vertical-align: top;
+    letter-spacing: .02em;
 }
 
-.hero > .container {
-    width: 100%;
-    height: 600px;
-    
-}
 
-.hero > .container > h1 {
+.hero-header {
     font-weight: 900;
     font-size: 44px;
     line-height: 116%;
-    letter-spacing: .06rem;
+    letter-spacing: .06em;
     color: var(--layout-text-color-third);
-    text-align: center;
-    vertical-align: top;
 }
 
-.hero > .container > button {
+.hero-button {
     background-color: var(--layout-text-color-main);
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
-    letter-spacing: .06rem;
-    text-align: center;
-    vertical-align:middle;
+    letter-spacing: .06em;
     color: var(--layout-text-color-third);
-    width: 200px;
-    height: 50px;
 }
 
-.footer .container, .hero > .container {
+.footer, .hero {
     background-color: var(--background-color-header-footer);
 }
 
-.footer .container {
-    width: 100%;
-    height: 252px;
-}
-.footer .container address a {
+.footer-list .list-item .link {
     font-weight: 400;
     font-size: 14px;
     line-height: 146%;
-    letter-spacing: .03rem;
-    text-align: left;
-    vertical-align: top;
-}
-
-address > ul > li:first-child > a {
     color: var(--layout-text-color-third);
 }
 
 
-address > ul > li > a {
+.footer-list .list-item .link {
     color: #ffffff3c;
 }
 
-main {
+.main {
     background-color: var(--background-color-section);
 }
 
-.hero ~ .section:nth-of-type(2) h3 {
+.hero .features-section .h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
-    letter-spacing: .03rem;
-    text-align: left;
-    vertical-align: top;
 }
-.hero ~.section:nth-of-type(2) p {
+.hero .features-section .p {
     font-weight: 400;
     font-size: 14px;
     line-height: 146%;
-    letter-spacing: .03rem;
-    text-align: left;
-    vertical-align: top;
     color: var(--layout-text-color-fourth);
 }
-.hero ~.section:nth-of-type(3) h2, .hero ~.section:nth-of-type(4) h2 {
+.hero .what-we-do-section .h2, .hero .our-team-section .h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
-    letter-spacing: .03rem;
-    text-align: center;
-    vertical-align: top;
 }
 
-.hero ~.section:nth-of-type(4) {
+.our-team-section {
     background-color: var(--background-color-section-second);
 }
 
-.hero ~.section:nth-of-type(4) ul li, .portfolio-ul {
+.our-team-list .list-item, .portfolio-imgs-list {
     background-color: var(--layout-text-color-third);
 }
 
-.hero ~.section:nth-of-type(4) ul li h3 {
+.our-team-list .list-item .h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: .03rem;
-    text-align: center;
-    vertical-align: top;
 }
 
-.hero ~.section:nth-of-type(4) ul li p {
+.our-team-list .list-item .p {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: .03rem;
     color: var(--layout-text-color-fourth);
-    text-align: center;
-    vertical-align: top;
 }
 
 /* *********************************    Portfolio   ********************************* */
-.section + .container button {
+.portfolio-list .button {
     height: 38px;
     font-weight: 500;
     font-size: 16px;
     line-height: 136%;
-    letter-spacing: .03rem;
-    text-align: center;
-    vertical-align: top;
 }
 
-.portfolio-ul h3 {
+.portfolio-imgs-list .h3 {
     font-weight: 700;
     font-size: 18px;
     line-height: 171%;
-    letter-spacing: .06rem;
-    text-align: center;
-    vertical-align: top;
+    letter-spacing: .06em;
 }
 
-.portfolio-ul p {
+.portfolio-imgs-list .p {
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    letter-spacing: .03rem;
-    text-align: left;
-    vertical-align: top;
     color: var(--layout-text-color-fourth);
 }
