@@ -51,7 +51,9 @@ body {
     line-height: 100%;
     letter-spacing: .02em;
 }
-
+ .nav .link-current {
+    color: var(--layout-text-color-main);
+ }
 
 .hero-header {
     font-weight: 900;
