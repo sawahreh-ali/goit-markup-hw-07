@@ -6,6 +6,7 @@
     --background-color-header-footer: #2F303A;
     --background-color-section: #E5E5E5;
     --background-color-section-second: #F5F4FA;
+    --hover-color: #188CE8;
 
 }
 
@@ -67,14 +68,14 @@ body {
     font-family: 'Roboto', 'Sans Serif';
     letter-spacing: .03em;
     background-color: var(--background-color-section-second);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 
-.button:hover,
-.button:focus {
-    background-color: var(--layout-text-color-main);
-    color: var(--layout-text-color-third);
-    border-color: var(--layout-text-color-main);
-    cursor: pointer;
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hover-color);
 }
 
 .contacts-link {
@@ -117,6 +118,7 @@ body {
     line-height: 160%;
     letter-spacing: .06em;
     color: var(--layout-text-color-third);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer,
@@ -130,15 +132,15 @@ body {
     line-height: 146%;
     color: #ffffff3c;
 }
-
-
-.footer-list .list-item .location-link {
-    color: var(--layout-text-color-third)
+.footer-list .list-item .link:hover{
+    color: var(--layout-text-color-third);
 }
 
 
+
+
 .main {
-    background-color: var(--background-color-section);
+    background-color: var(--layout-text-color-third);
 }
 
 .features-list .list-item .h3 {
