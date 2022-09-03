@@ -59,8 +59,8 @@ body {
 
 .link:hover,
 .link:focus,
-.footer-list .list-item .link:hover,
-.footer-list .list-item .link:focus {
+.footer-link:hover,
+.footer-link:focus {
     color: var(--layout-text-color-main);
 }
 
