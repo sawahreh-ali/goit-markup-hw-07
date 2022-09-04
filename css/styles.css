@@ -99,6 +99,10 @@ body {
     letter-spacing: .02em;
 }
 
+.header-contacts-link {
+    color: var(--layout-text-color-fourth);
+}
+
 .nav-link-current {
     color: var(--layout-text-color-main);
 }
@@ -132,7 +136,8 @@ body {
     line-height: 146%;
     color: #ffffff3c;
 }
-.footer-link:hover{
+
+.footer-link:hover {
     color: var(--layout-text-color-third);
 }
 
