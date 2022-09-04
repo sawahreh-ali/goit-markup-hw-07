@@ -1,3 +1,8 @@
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
 :root {
     --layout-text-color-main: #2196F3;
     --layout-text-color-second: #212121;
@@ -17,202 +22,462 @@ h4,
 h5,
 h6,
 p {
+    /* Positioning */
+    /* Box Model */
     margin: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
 }
 
 html {
+    /* Positioning */
+    /* Box Model */
     box-sizing: border-box;
+    /* Typography */
+    /* Visual */
+    /* Misc */
 }
 
 *,
 *::after,
 *::before {
+    /* Positioning */
+    /* Box Model */
     box-sizing: inherit;
+    /* Typography */
+    /* Visual */
+    /* Misc */
 }
 
 img {
+    /* Positioning */
+    /* Box Model */
     display: block;
     max-width: 100%;
     height: auto;
+    /* Typography */
+    /* Visual */
+    /* Misc */
 }
 
 address {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
     font-style: normal;
 }
 
 .link {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
     text-decoration: none;
     color: inherit;
 }
 
 .list {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 body {
+    /* Positioning */
+    position: absolute;
+    /* Box Model */
+    width: 1600px;
+    /* Typography */
     font-family: 'Roboto', 'Sans Serif';
     letter-spacing: .03em;
+    /* Visual */
     color: var(--layout-text-color-second);
+    /* Misc */
 }
+ .container{
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+
+ }
+
+ .section{
+     /* Positioning */
+    /* Box Model */
+    padding: 94px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+ }
+.header{
+    /* Positioning */
+    left: 0px;
+    top: 0px;
+    /* Box Model */
+    border-bottom: 1px solid #ECECEC;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 215px ;
+    /* margin: 0 auto; */
+}
+
+.nav{
+    /* Positioning */
+    left: 457px;
+    top: 32px;
+    /* Box Model */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 auto; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.nav-list{
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 auto; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+
+.nav-list li:first-child{
+    /* Positioning */
+    /* Box Model */
+    padding-right: 53px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.nav-list li:last-child{
+    /* Positioning */
+    /* Box Model */
+    padding-left: 69px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.contacts-list {
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Typography */
+    color: var(--layout-text-color-fourth);
+    /* Visual */
+    /* Misc */
+}
+.contacts-list .list-item:first-child {
+    padding-right: 50px;
+}
+.contacts-list .list-item:last-child {
+    padding-right: 215px;
+} 
 
 .link:hover,
 .link:focus,
 .footer-link:hover,
 .footer-link:focus {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     color: var(--layout-text-color-main);
+    /* Visual */
+    /* Misc */
 }
 
 .button {
-    font-family: 'Roboto', 'Sans Serif';
-    letter-spacing: .03em;
-    background-color: var(--background-color-section-second);
-    cursor: pointer;
+    /* Positioning */
+    /* Box Model */
     border: none;
     border-radius: 4px;
+    /* Typography */
+    font-family: 'Roboto', 'Sans Serif';
+    letter-spacing: .03em;
+    /* Visual */
+    background-color: var(--background-color-section-second);
+    cursor: pointer;
+    /* Misc */
+    
 }
 
 .hero-button:hover,
 .hero-button:focus {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
     background-color: var(--hover-color);
+    /* Misc */
 }
 
-.contacts-link {
-    color: var(--layout-text-color-fourth);
-}
+
 
 .logo {
+    /* Positioning */
+    /* Box Model */
+    padding-right: 97px;
+    /* Typography */
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 100%;
     letter-spacing: .03em;
+    /* Visual */
     color: var(--layout-text-color-main);
+    /* Misc */
 }
 
 .nav-link,
 .header-contacts-link {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
     letter-spacing: .02em;
+    /* Visual */
+    /* Misc */
 }
 
 .header-contacts-link {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
     color: var(--layout-text-color-fourth);
+    /* Misc */
 }
 
 .nav-link-current {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
     color: var(--layout-text-color-main);
+    /* Misc */
 }
 
 .hero-header {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 900;
     font-size: 44px;
     line-height: 116%;
     letter-spacing: .06em;
+    /* Visual */
     color: var(--layout-text-color-third);
+    /* Misc */
 }
 
 .hero-button {
-    background-color: var(--layout-text-color-main);
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
     letter-spacing: .06em;
+    /* Visual */
+    background-color: var(--layout-text-color-main);
     color: var(--layout-text-color-third);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    /* Misc */
 }
 
 .footer,
 .hero {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
     background-color: var(--background-color-header-footer);
+    /* Misc */
 }
 
 .footer-link {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 400;
     font-size: 14px;
     line-height: 146%;
+    /* Visual */
     color: #ffffff3c;
+    /* Misc */
 }
 
 .footer-link:hover {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
     color: var(--layout-text-color-third);
+    /* Misc */
 }
 
 
 
 
 .main {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
     background-color: var(--layout-text-color-third);
+    /* Misc */
 }
 
 .features-h3 {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
+    /* Visual */
+    /* Misc */
 }
 
 .features-p {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 400;
     font-size: 14px;
     line-height: 146%;
+    /* Visual */
     color: var(--layout-text-color-fourth);
+    /* Misc */
 }
 
 .what-we-do-h2,
 .our-team-h2 {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
+    /* Visual */
+    /* Misc */
 }
 
 .our-team-section {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
     background-color: var(--background-color-section-second);
+    /* Misc */
 }
 
 .our-team-list-item,
 .portfolio-imgs-list {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     background-color: var(--layout-text-color-third);
+    /* Visual */
+    /* Misc */
 }
 
 .our-team-h3 {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
+    /* Visual */
+    /* Misc */
 }
 
 .our-team-p {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
+    /* Visual */
     color: var(--layout-text-color-fourth);
+    /* Misc */
 }
 
 /* *********************************    Portfolio   ********************************* */
 .portfolio-button {
+    /* Positioning */
+    /* Box Model */
     height: 38px;
+    /* Typography */
     font-weight: 500;
     font-size: 16px;
     line-height: 139%;
+    /* Visual */
+    /* Misc */
 }
 
 .button-current {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
     background-color: var(--layout-text-color-main);
     color: var(--layout-text-color-third);
+    /* Misc */
 }
 
 .portfolio-h3 {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 700;
     font-size: 18px;
     line-height: 171%;
     letter-spacing: .06em;
+    /* Visual */
+    /* Misc */
 }
 
 .portfolio-p {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
+    /* Visual */
     color: var(--layout-text-color-fourth);
+    /* Misc */
 }
