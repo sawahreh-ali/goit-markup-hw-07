@@ -1,8 +1,8 @@
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    /* Misc */
+/* Positioning */
+/* Box Model */
+/* Typography */
+/* Visual */
+/* Misc */
 :root {
     --layout-text-color-main: #2196F3;
     --layout-text-color-second: #212121;
@@ -103,27 +103,29 @@ body {
     color: var(--layout-text-color-second);
     /* Misc */
 }
- .container{
+
+.container {
     /* Positioning */
     /* Box Model */
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     /* Typography */
     /* Visual */
     /* Misc */
 
- }
+}
 
- .section{
-     /* Positioning */
+.section {
+    /* Positioning */
     /* Box Model */
     padding: 94px;
     /* Typography */
     /* Visual */
     /* Misc */
- }
-.header{
+}
+
+.header {
     /* Positioning */
     left: 0px;
     top: 0px;
@@ -133,15 +135,16 @@ body {
     /* Visual */
     /* Misc */
 }
+
 .header-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 215px ;
+    padding: 32px 215px;
     /* margin: 0 auto; */
 }
 
-.nav{
+.nav {
     /* Positioning */
     left: 457px;
     top: 32px;
@@ -155,7 +158,7 @@ body {
     /* Misc */
 }
 
-.nav-list{
+.nav-list {
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -168,7 +171,7 @@ body {
 }
 
 
-.nav-list li:first-child{
+.nav-list li:first-child {
     /* Positioning */
     /* Box Model */
     padding-right: 53px;
@@ -176,7 +179,8 @@ body {
     /* Visual */
     /* Misc */
 }
-.nav-list li:last-child{
+
+.nav-list li:last-child {
     /* Positioning */
     /* Box Model */
     padding-left: 69px;
@@ -184,6 +188,7 @@ body {
     /* Visual */
     /* Misc */
 }
+
 .contacts-list {
     /* Positioning */
     /* Box Model */
@@ -195,12 +200,14 @@ body {
     /* Visual */
     /* Misc */
 }
+
 .contacts-list .list-item:first-child {
     padding-right: 50px;
 }
+
 .contacts-list .list-item:last-child {
     padding-right: 215px;
-} 
+}
 
 .link:hover,
 .link:focus,
@@ -226,7 +233,7 @@ body {
     background-color: var(--background-color-section-second);
     cursor: pointer;
     /* Misc */
-    
+
 }
 
 .hero-button:hover,
