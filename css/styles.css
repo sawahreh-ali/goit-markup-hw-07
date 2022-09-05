@@ -95,7 +95,7 @@ body {
     /* Positioning */
     position: absolute;
     /* Box Model */
-    width: 1600px;
+    /* width: 1600px; */
     /* Typography */
     font-family: 'Roboto', 'Sans Serif';
     letter-spacing: .03em;
@@ -107,6 +107,7 @@ body {
 .container {
     /* Positioning */
     /* Box Model */
+    width: 1600px;
     /* Typography */
     /* Visual */
     /* Misc */
@@ -135,7 +136,7 @@ body {
 
 .header-menu {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 32px 215px;
     /* margin: 0 auto; */
@@ -147,7 +148,7 @@ body {
     top: 32px;
     /* Box Model */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     /* margin: 0 auto; */
     /* Typography */
@@ -159,7 +160,7 @@ body {
     /* Positioning */
     /* Box Model */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     /* margin: 0 auto; */
     /* Typography */
@@ -171,7 +172,7 @@ body {
 .list-item-nav-list-first {
     /* Positioning */
     /* Box Model */
-    padding-right: 53px;
+    margin-right: 53px;
     /* Typography */
     /* Visual */
     /* Misc */
@@ -180,7 +181,7 @@ body {
 .list-item-nav-list-last {
     /* Positioning */
     /* Box Model */
-    padding-left: 69px;
+    margin-left: 69px;
     /* Typography */
     /* Visual */
     /* Misc */
@@ -190,8 +191,9 @@ body {
     /* Positioning */
     /* Box Model */
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-between; */
     align-items: center;
+    margin-left: 340px;
     /* Typography */
     color: var(--layout-text-color-fourth);
     /* Visual */
@@ -199,7 +201,7 @@ body {
 }
 
 .contacts-list-list-item-first-child {
-    padding-right: 50px;
+    margin-right: 50px;
 }
 
 
@@ -245,7 +247,7 @@ body {
 .logo {
     /* Positioning */
     /* Box Model */
-    padding-right: 97px;
+    margin-right: 97px;
     /* Typography */
     font-family: 'Raleway';
     font-weight: 700;
@@ -346,7 +348,15 @@ body {
     color: var(--layout-text-color-third);
     /* Misc */
 }
-
+.footer {
+    /* Positioning */
+    /* Box Model */
+    padding: 60px 0;
+    padding-left: 215px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
 
 
 
