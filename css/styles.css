@@ -108,7 +108,9 @@ body {
     /* Positioning */
     /* Box Model */
     width: 1600px;
+    margin: auto;
     /* Typography */
+    text-align: center;
     /* Visual */
     /* Misc */
 
@@ -117,7 +119,7 @@ body {
 .section {
     /* Positioning */
     /* Box Model */
-    padding: 94px;
+    padding: 94px 0;
     /* Typography */
     /* Visual */
     /* Misc */
@@ -293,6 +295,7 @@ body {
 .hero-header {
     /* Positioning */
     /* Box Model */
+    margin-bottom: 30px;
     /* Typography */
     font-weight: 900;
     font-size: 44px;
@@ -306,6 +309,7 @@ body {
 .hero-button {
     /* Positioning */
     /* Box Model */
+    padding: 10px 20px;
     /* Typography */
     font-weight: 700;
     font-size: 16px;
@@ -357,8 +361,14 @@ body {
     /* Visual */
     /* Misc */
 }
-
-
+ .hero {
+    /* Positioning */
+    /* Box Model */
+    padding: 200px 452px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+ }
 
 .main {
     /* Positioning */
