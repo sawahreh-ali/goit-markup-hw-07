@@ -262,6 +262,15 @@ body {
     /* Misc */
 }
 
+.logo:hover{
+     /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    color: var(--hover-color);
+    /* Misc */
+}
+
 .nav-link,
 .header-contacts-link {
     /* Positioning */
@@ -545,10 +554,21 @@ body {
 }
 
 /* *********************************    Portfolio   ********************************* */
+.portfolio-list{
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
 .portfolio-button {
     /* Positioning */
     /* Box Model */
-    height: 38px;
+    margin: 0 4px;
+    padding: 6px 26px;
     /* Typography */
     font-weight: 500;
     font-size: 16px;
@@ -567,9 +587,40 @@ body {
     /* Misc */
 }
 
+.portfolio-imgs-list {
+     /* Positioning */
+    /* Box Model */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.portfolio-imgs-list-item{
+     /* Positioning */
+    /* Box Model */
+    margin: 0 15px 30px 15px;
+    border: 1px solid #EEEEEE;
+    /* Typography */
+    text-align: left;
+    /* Visual */
+    /* Misc */
+}
+.portfolio-img{
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 20px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
 .portfolio-h3 {
     /* Positioning */
     /* Box Model */
+    margin-bottom: 4px;
+    margin-left: 24px;
     /* Typography */
     font-weight: 700;
     font-size: 18px;
@@ -582,6 +633,8 @@ body {
 .portfolio-p {
     /* Positioning */
     /* Box Model */
+    margin-left: 24px;
+    padding-bottom: 20px;
     /* Typography */
     font-weight: 400;
     font-size: 16px;
