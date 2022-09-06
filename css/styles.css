@@ -441,10 +441,21 @@ body {
 .our-team-h2 {
     /* Positioning */
     /* Box Model */
+    margin-bottom: 50px;
     /* Typography */
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
+    /* Visual */
+    /* Misc */
+}
+
+.what-we-do-list{
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    justify-content: space-around;
+    /* Typography */
     /* Visual */
     /* Misc */
 }
