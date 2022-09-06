@@ -108,7 +108,6 @@ body {
     /* Positioning */
     /* Box Model */
     width: 100%;
-    margin: auto;
     padding: 0 15px;
     /* Typography */
     text-align: center;
@@ -363,6 +362,14 @@ body {
     /* Visual */
     /* Misc */
 }
+.footer-container{
+     /* Positioning */
+    /* Box Model */
+    text-align: left;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
  .hero {
     /* Positioning */
     /* Box Model */
@@ -469,6 +476,40 @@ body {
     /* Misc */
 }
 
+.our-team-list{
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    justify-content: space-around;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.our-team-list-item {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    /* Misc */
+}
+.our-team-img{
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 30px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.our-team-list-item{
+    /* Positioning */
+    /* Box Model */
+    padding-bottom: 30px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
 .our-team-list-item,
 .portfolio-imgs-list {
     /* Positioning */
@@ -482,6 +523,7 @@ body {
 .our-team-h3 {
     /* Positioning */
     /* Box Model */
+    margin-bottom: 10px;
     /* Typography */
     font-weight: 500;
     font-size: 16px;
