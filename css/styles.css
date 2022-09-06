@@ -411,6 +411,8 @@ body {
     /* Positioning */
     /* Box Model */
     display: flex;
+    /* flex-wrap: nowrap; */
+    column-gap: 30px;
     align-items: center;
     /* Typography */
     text-align: left;
@@ -421,7 +423,7 @@ body {
 .features-list-item{
     /* Positioning */
     /* Box Model */
-    margin-right: 30px;
+    /* margin-right: 30px; */
     align-items: center;
     /* Typography */
     /* Visual */
@@ -470,7 +472,9 @@ body {
     /* Positioning */
     /* Box Model */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap:30px;
     /* Typography */
     /* Visual */
     /* Misc */
@@ -489,7 +493,9 @@ body {
     /* Positioning */
     /* Box Model */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap:30px;
     /* Typography */
     /* Visual */
     /* Misc */
@@ -592,7 +598,8 @@ body {
     /* Box Model */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 30px;
+    justify-content: center;
     /* Typography */
     /* Visual */
     /* Misc */
@@ -600,7 +607,6 @@ body {
 .portfolio-imgs-list-item{
      /* Positioning */
     /* Box Model */
-    margin: 0 15px 30px 15px;
     border: 1px solid #EEEEEE;
     /* Typography */
     text-align: left;
