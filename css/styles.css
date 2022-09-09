@@ -384,20 +384,28 @@ body {
     /* Positioning */
     /* Box Model */
     padding: 60px 0;
-    padding-left: 15px;
     /* Typography */
     /* Visual */
     /* Misc */
 }
-
-.footer-container {
+ .logo-footer {
     /* Positioning */
     /* Box Model */
-    text-align: left;
+    display: block;
+    margin-bottom: 10px;
     /* Typography */
     /* Visual */
     /* Misc */
-}
+ }
+
+ .footer-list-item{
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 4px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+ }
 
 .hero {
     /* Positioning */
