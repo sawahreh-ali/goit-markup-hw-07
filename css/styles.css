@@ -164,15 +164,7 @@ body {
     /* Visual */
     /* Misc */
 }
-.nav-list-item {
- /* Positioning */
-    /* Box Model */
-    display: block;
-    margin-left: 60px;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
+
 
 .contacts-list {
     /* Positioning */
@@ -284,6 +276,7 @@ body {
 .nav-item-list:not(:last-child){
     /* Positioning */
     /* Box Model */
+    display: block;
     margin-right: 60px;
     /* Typography */
     /* Visual */
