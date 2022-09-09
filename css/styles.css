@@ -273,7 +273,7 @@ body {
     /* Misc */
 }
 
-.nav-item-list:not(:last-child){
+.nav-list-item:not(:last-child){
     /* Positioning */
     /* Box Model */
     display: block;
@@ -406,15 +406,6 @@ body {
     /* Misc */
 }
 
-.features-section{
-    /* Positioning */
-    /* Box Model */
-    padding: 94px 15px 6px 15px;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
 .features-list {
     /* Positioning */
     /* Box Model */
@@ -423,7 +414,6 @@ body {
     column-gap: 30px;
     align-items: center;
     /* Typography */
-    text-align: left;
     /* Visual */
     /* Misc */
 }
@@ -432,7 +422,6 @@ body {
     /* Positioning */
     /* Box Model */
     /* margin-right: 30px; */
-    align-items: center;
     /* Typography */
     /* Visual */
     /* Misc */
