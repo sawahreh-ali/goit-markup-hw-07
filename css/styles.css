@@ -93,12 +93,12 @@ address {
 
 body {
     /* Positioning */
-    position: absolute;
     /* Box Model */
     /* width: 1600px; */
     /* Typography */
     font-family: 'Roboto', 'Sans Serif';
     letter-spacing: .03em;
+    font-size: 14px;
     /* Visual */
     color: var(--layout-text-color-second);
     /* Misc */
@@ -107,10 +107,10 @@ body {
 .container {
     /* Positioning */
     /* Box Model */
-    width: 100%;
+    width: 1200px;
     padding: 0 15px;
     /* Typography */
-    text-align: center;
+    margin: 0 auto;
     /* Visual */
     /* Misc */
 
@@ -127,8 +127,6 @@ body {
 
 .header {
     /* Positioning */
-    left: 0px;
-    top: 0px;
     /* Box Model */
     border-bottom: 1px solid #ECECEC;
     /* Typography */
@@ -138,17 +136,12 @@ body {
 
 .header-menu {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    /* margin: 0 auto; */
 }
 
 .nav {
     /* Positioning */
-    left: 457px;
-    top: 32px;
     /* Box Model */
     display: flex;
     /* justify-content: space-between; */
@@ -163,6 +156,7 @@ body {
     /* Positioning */
     /* Box Model */
     display: flex;
+    margin-left: 97px;
     /* justify-content: space-between; */
     align-items: center;
     /* margin: 0 auto; */
@@ -170,21 +164,11 @@ body {
     /* Visual */
     /* Misc */
 }
-
-
-.list-item-nav-list-first {
-    /* Positioning */
+.nav-list-item {
+ /* Positioning */
     /* Box Model */
-    margin-right: 53px;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
-.list-item-nav-list-last {
-    /* Positioning */
-    /* Box Model */
-    margin-left: 69px;
+    display: block;
+    margin-left: 60px;
     /* Typography */
     /* Visual */
     /* Misc */
@@ -196,15 +180,19 @@ body {
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
-    margin-left: 340px;
     /* Typography */
-    color: var(--layout-text-color-fourth);
     /* Visual */
     /* Misc */
 }
 
-.contacts-list-list-item-first-child {
+.contacts-list-item:not(:last-child){
+    /* Positioning */
+    /* Box Model */
     margin-right: 50px;
+    /* justify-content: space-between; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
 }
 
 
@@ -250,7 +238,6 @@ body {
 .logo {
     /* Positioning */
     /* Box Model */
-    margin-right: 97px;
     /* Typography */
     font-family: 'Raleway';
     font-weight: 700;
@@ -284,6 +271,25 @@ body {
     /* Misc */
 }
 
+.nav-link {
+    /* Positioning */
+    /* Box Model */
+    display: block;
+    padding: 32px 0 31px 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.nav-item-list:not(:last-child){
+    /* Positioning */
+    /* Box Model */
+    margin-right: 60px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
 .header-contacts-link {
     /* Positioning */
     /* Box Model */
@@ -299,6 +305,15 @@ body {
     /* Typography */
     /* Visual */
     color: var(--layout-text-color-main);
+    /* Misc */
+}
+
+.hero-container {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    text-align: center;
+    /* Visual */
     /* Misc */
 }
 
