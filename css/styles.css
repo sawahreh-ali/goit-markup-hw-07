@@ -125,7 +125,7 @@ body {
     /* Misc */
 }
 
-.section-has-no-top-padding{
+.section-has-no-top-padding {
     /* Positioning */
     /* Box Model */
     padding-top: 0;
@@ -388,7 +388,8 @@ body {
     /* Visual */
     /* Misc */
 }
- .logo-footer {
+
+.logo-footer {
     /* Positioning */
     /* Box Model */
     display: block;
@@ -396,16 +397,16 @@ body {
     /* Typography */
     /* Visual */
     /* Misc */
- }
+}
 
- .footer-list-item{
+.footer-list-item:not(:last-child) {
     /* Positioning */
     /* Box Model */
     margin-bottom: 4px;
     /* Typography */
     /* Visual */
     /* Misc */
- }
+}
 
 .hero {
     /* Positioning */
@@ -417,14 +418,6 @@ body {
     /* Misc */
 }
 
-.main {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    background-color: var(--layout-text-color-third);
-    /* Misc */
-}
 
 .features-list {
     /* Positioning */
@@ -463,7 +456,7 @@ body {
     /* Misc */
 }
 
-.section-title{
+.section-title {
     /* Positioning */
     /* Box Model */
     margin-bottom: 50px;
@@ -572,18 +565,20 @@ body {
 }
 
 /* *********************************    Portfolio   ********************************* */
-.portfolio-list {
+.filters-list {
     /* Positioning */
     /* Box Model */
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 8px;
     margin-bottom: 50px;
     /* Typography */
     /* Visual */
     /* Misc */
 }
 
-.portfolio-button {
+.filter-button {
     /* Positioning */
     /* Box Model */
     margin: 0 4px;
@@ -596,13 +591,32 @@ body {
     /* Misc */
 }
 
-.button-current {
+.filter-button:hover, .filter-button:focus{
+     /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background-color: var(--background-color-section);
+    /* Misc */
+}
+
+.filter-current {
     /* Positioning */
     /* Box Model */
     /* Typography */
     /* Visual */
     background-color: var(--layout-text-color-main);
     color: var(--layout-text-color-third);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    /* Misc */
+}
+.filter-current:hover, .filter-current:focus{
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background-color: var(--hover-color);
     /* Misc */
 }
 
