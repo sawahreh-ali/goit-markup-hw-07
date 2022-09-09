@@ -125,6 +125,15 @@ body {
     /* Misc */
 }
 
+.section-has-no-top-padding{
+    /* Positioning */
+    /* Box Model */
+    padding-top: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
 .header {
     /* Positioning */
     /* Box Model */
@@ -177,7 +186,7 @@ body {
     /* Misc */
 }
 
-.contacts-list-item:not(:last-child){
+.contacts-list-item:not(:last-child) {
     /* Positioning */
     /* Box Model */
     margin-right: 50px;
@@ -241,8 +250,8 @@ body {
     /* Misc */
 }
 
-.logo:hover{
-     /* Positioning */
+.logo:hover {
+    /* Positioning */
     /* Box Model */
     /* Typography */
     /* Visual */
@@ -273,7 +282,7 @@ body {
     /* Misc */
 }
 
-.nav-list-item:not(:last-child){
+.nav-list-item:not(:last-child) {
     /* Positioning */
     /* Box Model */
     display: block;
@@ -370,6 +379,7 @@ body {
     color: var(--layout-text-color-third);
     /* Misc */
 }
+
 .footer {
     /* Positioning */
     /* Box Model */
@@ -379,15 +389,17 @@ body {
     /* Visual */
     /* Misc */
 }
-.footer-container{
-     /* Positioning */
+
+.footer-container {
+    /* Positioning */
     /* Box Model */
     text-align: left;
     /* Typography */
     /* Visual */
     /* Misc */
 }
- .hero {
+
+.hero {
     /* Positioning */
     /* Box Model */
     padding-top: 200px;
@@ -395,7 +407,7 @@ body {
     /* Typography */
     /* Visual */
     /* Misc */
- }
+}
 
 .main {
     /* Positioning */
@@ -413,15 +425,6 @@ body {
     /* flex-wrap: nowrap; */
     column-gap: 30px;
     align-items: center;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
-.features-list-item{
-    /* Positioning */
-    /* Box Model */
-    /* margin-right: 30px; */
     /* Typography */
     /* Visual */
     /* Misc */
@@ -452,8 +455,7 @@ body {
     /* Misc */
 }
 
-.what-we-do-h2,
-.our-team-h2 {
+.section-title{
     /* Positioning */
     /* Box Model */
     margin-bottom: 50px;
@@ -461,17 +463,18 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
+    text-align: center;
     /* Visual */
     /* Misc */
 }
 
-.what-we-do-list{
+.what-we-do-list {
     /* Positioning */
     /* Box Model */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-wrap: wrap;
-    column-gap:30px;
+    column-gap: 30px;
     /* Typography */
     /* Visual */
     /* Misc */
@@ -486,17 +489,18 @@ body {
     /* Misc */
 }
 
-.our-team-list{
+.our-team-list {
     /* Positioning */
     /* Box Model */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap:30px;
+    column-gap: 30px;
     /* Typography */
     /* Visual */
     /* Misc */
 }
+
 .our-team-list-item {
     /* Positioning */
     /* Box Model */
@@ -506,7 +510,8 @@ body {
     border-radius: 0px 0px 4px 4px;
     /* Misc */
 }
-.our-team-img{
+
+.our-team-img {
     /* Positioning */
     /* Box Model */
     margin-bottom: 30px;
@@ -514,7 +519,8 @@ body {
     /* Visual */
     /* Misc */
 }
-.our-team-list-item{
+
+.our-team-list-item {
     /* Positioning */
     /* Box Model */
     padding-bottom: 30px;
@@ -522,6 +528,7 @@ body {
     /* Visual */
     /* Misc */
 }
+
 .our-team-list-item,
 .portfolio-imgs-list {
     /* Positioning */
@@ -557,7 +564,7 @@ body {
 }
 
 /* *********************************    Portfolio   ********************************* */
-.portfolio-list{
+.portfolio-list {
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -567,6 +574,7 @@ body {
     /* Visual */
     /* Misc */
 }
+
 .portfolio-button {
     /* Positioning */
     /* Box Model */
@@ -591,7 +599,7 @@ body {
 }
 
 .portfolio-imgs-list {
-     /* Positioning */
+    /* Positioning */
     /* Box Model */
     display: flex;
     flex-wrap: wrap;
@@ -601,8 +609,9 @@ body {
     /* Visual */
     /* Misc */
 }
-.portfolio-imgs-list-item{
-     /* Positioning */
+
+.portfolio-imgs-list-item {
+    /* Positioning */
     /* Box Model */
     border: 1px solid #EEEEEE;
     /* Typography */
@@ -610,7 +619,8 @@ body {
     /* Visual */
     /* Misc */
 }
-.portfolio-img{
+
+.portfolio-img {
     /* Positioning */
     /* Box Model */
     margin-bottom: 20px;
