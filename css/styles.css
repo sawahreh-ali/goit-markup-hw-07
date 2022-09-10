@@ -425,13 +425,22 @@ body {
     display: flex;
     /* flex-wrap: nowrap; */
     column-gap: 30px;
-    align-items: center;
     /* Typography */
     /* Visual */
     /* Misc */
 }
+.features-list-item{
+    /* Positioning */
+    /* Box Model */
+    width: 270px;
+    /* flex-wrap: nowrap; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
 
-.features-h3 {
+}
+
+.features-title {
     /* Positioning */
     /* Box Model */
     margin-bottom: 9.4px;
@@ -443,7 +452,7 @@ body {
     /* Misc */
 }
 
-.features-p {
+.features-description {
     /* Positioning */
     /* Box Model */
     /* width: 270px; */
@@ -634,13 +643,6 @@ body {
     /* Misc */
 }
 
-.projects-list-item {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
 
 .projects-wrapper{
     /* Positioning */
