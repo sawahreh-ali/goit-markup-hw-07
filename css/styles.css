@@ -720,9 +720,13 @@ body {
   
   .icon-mobile {
     width: 0.625em;
+    margin-bottom: -2px;
+    margin-right: 10px;
   }
   
   .icon-envelope {
     width: 1.3330078125em;
+    margin-bottom: -2px;
+    margin-right: 10px;
   }
   
