@@ -700,12 +700,7 @@ body {
     font-size: 32px;
     color: red;
   }
-  ========================================== */
-  
-  .icon-rectangle {
-    width: 1.84765625em;
-  }
-  
+  ========================================== */  
   .icon-comany06 {
     width: 1.7666015625em;
   }
@@ -742,3 +737,11 @@ body {
     margin-right: 10px;
   }
   
+  .icon-antenna,
+  .icon-clock,
+  .icon-computer,
+  .icon-astronaut {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
