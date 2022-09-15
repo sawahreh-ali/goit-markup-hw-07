@@ -12,6 +12,7 @@
     --background-color-section: #E5E5E5;
     --background-color-section-second: #F5F4FA;
     --hover-color: #188CE8;
+    --icon-color: #AFB1B8;
 
 }
 
@@ -561,7 +562,7 @@ body {
     /* Misc */
 }
 
-.our-team-h3 {
+.our-team-title {
     /* Positioning */
     /* Box Model */
     margin-bottom: 10px;
@@ -573,9 +574,10 @@ body {
     /* Misc */
 }
 
-.our-team-p {
+.our-team-role {
     /* Positioning */
     /* Box Model */
+    margin-bottom: 16px;
     /* Typography */
     font-weight: 400;
     font-size: 16px;
@@ -744,4 +746,31 @@ body {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
+  }
+
+  .social-accounts-icons-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+  }
+
+  .social-accounts-icons-list-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .social-account-link {
+    color: var(--icon-color);
+  }
+  .social-accounts-icons-list-item:hover {
+    background-color: var(--layout-text-color-main);
+  }
+  .social-account-link:hover {
+    color: var(--layout-text-color-third);
+  }
+  .icon-social-account {
+    width: 44px;
+    height: 44px;
   }
