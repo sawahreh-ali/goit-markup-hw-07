@@ -815,5 +815,35 @@ body {
   .social-accounts-wrapper{
     padding-top: 15px;
   }
+.customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    justify-content: center;
+}
+.icon-customer {
+    width: 170px;
+    height: 92px;
+}
 
+.customers-list-item {
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    color: var(--icon-color);
+}
+.customers-list-item:hover {
+    color: var(--layout-text-color-main);
+    border-color: var(--layout-text-color-main);
+}
 
+.customers-section {
+    text-align: center;
+}
+
+.customers-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
