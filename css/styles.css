@@ -705,15 +705,13 @@ body {
     margin-right: 10px;
   }
 
-  .icon-antenna,
-  .icon-clock,
-  .icon-computer,
-  .icon-astronaut {
-    width: 270px;
-    height: 120px;
+  .features-icon-wrapper {
+    border-radius: 4px;
+    padding: 25px 100px;
     margin-bottom: 30px;
+    text-align: center;
+    background: var(--background-color-section-second);
   }
-
   .social-accounts-icons-list,
   .webiste-social-accounts-icons-list {
     display: flex;
