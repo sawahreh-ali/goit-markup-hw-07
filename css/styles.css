@@ -716,45 +716,38 @@ body {
   .webiste-social-accounts-icons-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
+    gap: 10px;
     justify-content: center;
   }
 
-  .social-accounts-icons-list-item, 
-  .webiste-social-accounts-icons-list-item{
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    text-align: center;
-  }
 
-  .webiste-social-accounts-icons-list-item {
+  .webiste-social-account-link {
     background-color: rgba(255, 255, 255, 0.1);
   }
 
 
-  .social-account-link {
+  .social-account-link,
+  .webiste-social-account-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     color: var(--icon-color);
   }
   .webiste-social-account-link{
     color: var(--layout-text-color-third);
   }
-  .webiste-social-accounts-icons-list-item:hover {
-    background-color: var(--layout-text-color-main);
-  }
-  .social-accounts-icons-list-item:hover {
-    background-color: var(--layout-text-color-main);
-  }
+ 
   .social-account-link:hover,
-  .webiste-social-account-link:hover {
+  .webiste-social-account-link:hover,
+  .social-account-link:focus,
+  .webiste-social-account-link:focus {
     color: var(--layout-text-color-third);
-  }
-  .icon-social-account,
-  .icon-webiste-social-account {
-    width: 44px;
-    height: 44px;
-  }
+    background-color: var(--layout-text-color-main);
 
+  }
 
   .social-accounts-title {
     /* Positioning */
