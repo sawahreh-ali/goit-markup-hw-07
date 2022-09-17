@@ -264,6 +264,8 @@ body {
 .header-contacts-link {
     /* Positioning */
     /* Box Model */
+    display: flex;
+    align-items: center;
     /* Typography */
     font-weight: 500;
     font-size: 14px;
@@ -688,11 +690,6 @@ body {
 }
 /* *********************************    Portfolio   ********************************* */
 .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
     fill: currentColor;
   }
   
@@ -703,42 +700,11 @@ body {
     color: red;
   }
   ========================================== */  
-  .icon-comany06 {
-    width: 1.7666015625em;
-  }
-  
-  .icon-company05 {
-    width: 1.7666015625em;
-  }
-  
-  .icon-company04 {
-    width: 1.7666015625em;
-  }
-  
-  .icon-company03 {
-    width: 1.7666015625em;
-  }
-  
-  .icon-company01 {
-    width: 1.7666015625em;
-  }
-  
-  .icon-comany02 {
-    width: 1.7666015625em;
-  }
-  
-  .icon-mobile {
-    width: 0.625em;
-    margin-bottom: -2px;
-    margin-right: 10px;
-  }
-  
+  .icon-mobile, 
   .icon-envelope {
-    width: 1.3330078125em;
-    margin-bottom: -2px;
     margin-right: 10px;
   }
-  
+
   .icon-antenna,
   .icon-clock,
   .icon-computer,
