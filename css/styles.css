@@ -505,6 +505,38 @@ body {
     /* Misc */
 }
 
+.what-we-do-list-item {
+    /* Positioning */
+    position: relative;
+    /* Box Model */
+    /* justify-content: center; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.what-we-do-description {
+     /* Positioning */
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     /* Box Model */
+     width: 100%;
+     padding: 27px 0;
+     /* justify-content: center; */
+     /* Typography */
+     font-style: Bold;
+     font-weight: 700;
+     font-size: 14px;
+     letter-spacing: 3%;
+     text-transform: uppercase;
+     color: var(--layout-text-color-third);
+     text-align: center;
+     /* Visual */
+     background-color: rgba(47, 48, 58, 0.8);
+     ;
+     /* Misc */
+}
+
 .our-team-section {
     /* Positioning */
     /* Box Model */
