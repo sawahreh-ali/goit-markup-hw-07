@@ -362,12 +362,12 @@ body {
     /* Misc */
 }
 
-.hero{
+.hero {
     /* Positioning */
     /* Box Model */
     /* Typography */
     /* Visual */
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url('../images/hero-bg.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -444,7 +444,8 @@ body {
     /* Visual */
     /* Misc */
 }
-.features-list-item{
+
+.features-list-item {
     /* Positioning */
     /* Box Model */
     width: 270px;
@@ -514,27 +515,28 @@ body {
     /* Visual */
     /* Misc */
 }
+
 .what-we-do-description {
-     /* Positioning */
-     position: absolute;
-     left: 0;
-     bottom: 0;
-     /* Box Model */
-     width: 100%;
-     padding: 27px 0;
-     /* justify-content: center; */
-     /* Typography */
-     font-style: Bold;
-     font-weight: 700;
-     font-size: 14px;
-     letter-spacing: 3%;
-     text-transform: uppercase;
-     color: var(--layout-text-color-third);
-     text-align: center;
-     /* Visual */
-     background-color: rgba(47, 48, 58, 0.8);
-     ;
-     /* Misc */
+    /* Positioning */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* Box Model */
+    width: 100%;
+    padding: 27px 0;
+    /* justify-content: center; */
+    /* Typography */
+    font-style: Bold;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: var(--layout-text-color-third);
+    text-align: center;
+    /* Visual */
+    background-color: rgba(47, 48, 58, 0.8);
+    ;
+    /* Misc */
 }
 
 .our-team-section {
@@ -683,13 +685,58 @@ body {
     /* Visual */
     /* Misc */
 }
+.project-link{
+    /* Positioning */
+    /* Box Model */
+    display: inline-block;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
 .project-link:hover,
 .project-link:focus {
-    display: inline-block;
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    /* Misc */
+}
+.projects-overlay-container{
+    /* Positioning */
+    position: relative;
+    /* Box Model */
+    overflow: hidden;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.projects-overlay-text {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Box Model */
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    /* Typography */
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 3%;
+    /* Visual */
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--layout-text-color-third);
+    /* Misc */
+    transform: translatey(-100%);
+}
+.project-link:hover .projects-overlay-text,
+.project-link:focus .projects-overlay-text{
+    transform: translateY(0);
 }
 
-.projects-wrapper{
+.projects-wrapper {
     /* Positioning */
     /* Box Model */
     border: 1px solid #EEEEEE;
@@ -725,46 +772,48 @@ body {
     color: var(--layout-text-color-fourth);
     /* Misc */
 }
+
 /* *********************************    Portfolio   ********************************* */
 .icon {
     fill: currentColor;
-  }
-  
-  /* ==========================================
+}
+
+/* ==========================================
   Single-colored icons can be modified like so:
   .name {
     font-size: 32px;
     color: red;
   }
-  ========================================== */  
-  .icon-mobile, 
-  .icon-envelope {
+  ========================================== */
+.icon-mobile,
+.icon-envelope {
     margin-right: 10px;
-  }
+}
 
-  .features-icon-wrapper {
+.features-icon-wrapper {
     border-radius: 4px;
     padding: 25px 100px;
     margin-bottom: 30px;
     text-align: center;
     background: var(--background-color-section-second);
-  }
-  .social-accounts-icons-list,
-  .webiste-social-accounts-icons-list {
+}
+
+.social-accounts-icons-list,
+.webiste-social-accounts-icons-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-  }
+}
 
 
-  .webiste-social-account-link {
+.webiste-social-account-link {
     background-color: rgba(255, 255, 255, 0.1);
-  }
+}
 
 
-  .social-account-link,
-  .webiste-social-account-link {
+.social-account-link,
+.webiste-social-account-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -772,21 +821,22 @@ body {
     height: 44px;
     border-radius: 50%;
     color: var(--icon-color);
-  }
-  .webiste-social-account-link{
+}
+
+.webiste-social-account-link {
     color: var(--layout-text-color-third);
-  }
- 
-  .social-account-link:hover,
-  .webiste-social-account-link:hover,
-  .social-account-link:focus,
-  .webiste-social-account-link:focus {
+}
+
+.social-account-link:hover,
+.webiste-social-account-link:hover,
+.social-account-link:focus,
+.webiste-social-account-link:focus {
     color: var(--layout-text-color-third);
     background-color: var(--layout-text-color-main);
 
-  }
+}
 
-  .social-accounts-title {
+.social-accounts-title {
     /* Positioning */
     /* Box Model */
     margin-bottom: 20px;
@@ -798,17 +848,18 @@ body {
     color: var(--layout-text-color-third);
     text-transform: uppercase;
     /* Misc */
-  }
+}
 
-  .footer-container {
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     column-gap: 156px;
-  }
+}
 
-  .social-accounts-wrapper{
+.social-accounts-wrapper {
     padding-top: 15px;
-  }
+}
+
 .customers-list {
     display: flex;
     flex-wrap: wrap;
@@ -825,6 +876,7 @@ body {
     padding: 16px 32px;
     color: var(--icon-color);
 }
+
 .customers-list-item:hover {
     color: var(--layout-text-color-main);
     border-color: var(--layout-text-color-main);
