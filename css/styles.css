@@ -208,6 +208,7 @@ body {
     color: var(--layout-text-color-main);
     /* Visual */
     /* Misc */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button {
@@ -233,6 +234,8 @@ body {
     /* Visual */
     background-color: var(--hover-color);
     /* Misc */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -251,12 +254,15 @@ body {
     /* Misc */
 }
 
-.logo:hover {
+.logo:hover,
+.logo:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
     /* Visual */
     color: var(--hover-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     /* Misc */
 }
 
@@ -284,7 +290,14 @@ body {
     /* Visual */
     /* Misc */
 }
-
+.nav-list-item {
+    /* Positioning */
+    position: relative;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
 .nav-list-item:not(:last-child) {
     /* Positioning */
     /* Box Model */
@@ -310,6 +323,22 @@ body {
     /* Typography */
     /* Visual */
     color: var(--layout-text-color-main);
+    /* Misc */
+}
+.nav-link-current::after{
+    /* Positioning */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* Box Model */
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    /* Typography */
+    /* Visual */
+    background-color: var(--layout-text-color-main);
     /* Misc */
 }
 
@@ -386,13 +415,15 @@ body {
     /* Misc */
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
     /* Visual */
     color: var(--layout-text-color-third);
     /* Misc */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -660,6 +691,10 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     /* Misc */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .filter-current {
@@ -700,6 +735,8 @@ body {
     /* Typography */
     /* Visual */
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     /* Misc */
 }
 .projects-overlay-container{
@@ -735,6 +772,8 @@ body {
 .project-link:hover .projects-overlay-text,
 .project-link:focus .projects-overlay-text{
     transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .projects-wrapper {
@@ -834,6 +873,9 @@ body {
 .webiste-social-account-link:focus {
     color: var(--layout-text-color-third);
     background-color: var(--layout-text-color-main);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
@@ -878,9 +920,14 @@ body {
     color: var(--icon-color);
 }
 
-.customers-list-item:hover {
+.customers-list-item:hover,
+.customers-list-item:focus {
     color: var(--layout-text-color-main);
     border-color: var(--layout-text-color-main);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
 .customers-section {
