@@ -79,6 +79,7 @@ address {
     text-decoration: none;
     color: inherit;
     /* Misc */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -208,7 +209,6 @@ body {
     color: var(--layout-text-color-main);
     /* Visual */
     /* Misc */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button {
@@ -234,8 +234,6 @@ body {
     /* Visual */
     background-color: var(--hover-color);
     /* Misc */
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 
@@ -252,6 +250,7 @@ body {
     /* Visual */
     color: var(--layout-text-color-main);
     /* Misc */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover,
@@ -261,8 +260,6 @@ body {
     /* Typography */
     /* Visual */
     color: var(--hover-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     /* Misc */
 }
 
@@ -328,7 +325,7 @@ body {
 .nav-link-current::after{
     /* Positioning */
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     /* Box Model */
     content: '';
@@ -378,6 +375,9 @@ body {
     background-color: var(--layout-text-color-main);
     color: var(--layout-text-color-third);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* Misc */
 }
 
@@ -413,6 +413,7 @@ body {
     /* Visual */
     color: #ffffff3c;
     /* Misc */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
@@ -423,7 +424,6 @@ body {
     /* Visual */
     color: var(--layout-text-color-third);
     /* Misc */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -557,10 +557,8 @@ body {
     padding: 27px 0;
     /* justify-content: center; */
     /* Typography */
-    font-style: Bold;
     font-weight: 700;
     font-size: 14px;
-    letter-spacing: 3%;
     text-transform: uppercase;
     color: var(--layout-text-color-third);
     text-align: center;
@@ -678,6 +676,9 @@ body {
     line-height: 139%;
     /* Visual */
     /* Misc */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -691,10 +692,6 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     /* Misc */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .filter-current {
@@ -727,6 +724,7 @@ body {
     /* Typography */
     /* Visual */
     /* Misc */
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover,
 .project-link:focus {
@@ -735,8 +733,6 @@ body {
     /* Typography */
     /* Visual */
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     /* Misc */
 }
 .projects-overlay-container{
@@ -769,11 +765,13 @@ body {
     transform: translatey(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.project-link .projects-overlay-text{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .project-link:hover .projects-overlay-text,
 .project-link:focus .projects-overlay-text{
     transform: translateY(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .projects-wrapper {
@@ -861,6 +859,8 @@ body {
     height: 44px;
     border-radius: 50%;
     color: var(--icon-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .webiste-social-account-link {
@@ -873,10 +873,6 @@ body {
 .webiste-social-account-link:focus {
     color: var(--layout-text-color-third);
     background-color: var(--layout-text-color-main);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 .social-accounts-title {
@@ -918,16 +914,14 @@ body {
     border-radius: 4px;
     padding: 16px 32px;
     color: var(--icon-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-item:hover,
 .customers-list-item:focus {
     color: var(--layout-text-color-main);
     border-color: var(--layout-text-color-main);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 .customers-section {
@@ -956,7 +950,6 @@ body {
     /* Typography */
     /* Visual */
     background-color: rgba(0, 0, 0, 0.2);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* Misc */
 }
 
@@ -972,6 +965,8 @@ body {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button {
