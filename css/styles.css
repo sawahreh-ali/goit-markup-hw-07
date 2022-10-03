@@ -373,7 +373,8 @@ body {
 }
 
 .hero-button,
-.footer-submit-button {
+.footer-submit-button,
+.modal-form-submit {
     /* Positioning */
     /* Box Model */
     padding: 10px 20px;
@@ -1021,7 +1022,7 @@ body {
 
 .customers-list-item:hover,
 .customers-list-item:focus {
-     /* Positioning */
+    /* Positioning */
     /* Box Model */
     /* Typography */
     /* Visual */
@@ -1031,16 +1032,16 @@ body {
 }
 
 .customers-section {
-     /* Positioning */
+    /* Positioning */
     /* Box Model */
     /* Typography */
-     text-align: center;
+    text-align: center;
     /* Visual */
     /* Misc */
 }
 
 .customers-title {
-     /* Positioning */
+    /* Positioning */
     /* Box Model */
     margin-bottom: 50px;
     /* Typography */
@@ -1072,33 +1073,36 @@ body {
 }
 
 .modal-content {
-     /* Positioning */
-      position: relative;
+    /* Positioning */
+    position: relative;
     /* Box Model */
-      width: 528px;
+    display: flex;
+    justify-content: center;
+    width: 528px;
     height: 581px;
+    padding: 40px;
     /* Typography */
     /* Visual */
-     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: var(--layout-text-color-third);
-    /* Misc */ 
+    /* Misc */
 }
 
 .is-hidden {
-     /* Positioning */
+    /* Positioning */
     /* Box Model */
     /* Typography */
     /* Visual */
-     visibility: hidden;
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
     /* Misc */
 }
 
 .close-button {
-     /* Positioning */
-     position: absolute;
+    /* Positioning */
+    position: absolute;
     top: 4px;
     right: 4px;
     /* Box Model */
@@ -1110,14 +1114,14 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     /* Typography */
     /* Visual */
-       border-radius: 50%;
+    border-radius: 50%;
     background-color: var(--layout-text-color-third);
     /* Misc */
 }
 
 .footer-submit-button {
-     /* Positioning */
-     position: relative;
+    /* Positioning */
+    position: relative;
     /* Box Model */
     display: inline-flex;
     justify-content: center;
@@ -1150,11 +1154,97 @@ body {
 
 .footer-form-email:hover,
 .footer-form-email:focus {
-        /* Positioning */
-        /* Box Model */
-        /* Typography */
-        /* Visual */
-        border-color: var(--layout-text-color-third);
-        outline: none;
-        /* Misc */
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    border-color: var(--layout-text-color-third);
+    outline: none;
+    /* Misc */
+}
+.modal-form-title {
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 12px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.form-feild:not(:last-of-type) {
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 10px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.form-feild:last-of-type {
+    /* Positioning */
+    position: relative;
+    /* Box Model */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+
+.modal-form-label {
+     /* Positioning */
+    /* Box Model */
+    display: block;
+    /* Typography */
+    /* Visual */
+    color: var(--layout-text-color-fourth);
+    /* Misc */
+}
+
+.modal-form-input {
+     /* Positioning */
+    /* Box Model */
+    display: block;
+    width: 100%;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.policy-input {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 4px;
+    /* Box Model */
+    display: inline-block;
+    width: fit-content;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+    
+}
+
+.policy-label {
+    /* Positioning */
+    /* Box Model */
+    display: inline-block;
+    width: fit-content;
+    padding: 0 26px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+    
+}
+
+.modal-form-submit {
+    /* Positioning */
+    /* Box Model */
+    display: block;
+    margin: auto;
+    padding: 10px 80px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
 }
