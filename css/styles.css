@@ -1167,12 +1167,14 @@ body {
     /* Box Model */
     margin-bottom: 12px;
     /* Typography */
+    font-size: 20px;
     /* Visual */
     /* Misc */
 }
 
 .form-feild:not(:last-of-type) {
     /* Positioning */
+    position: relative;
     /* Box Model */
     margin-bottom: 10px;
     /* Typography */
@@ -1196,6 +1198,7 @@ body {
      /* Positioning */
     /* Box Model */
     display: block;
+    margin-bottom: 4px;
     /* Typography */
     /* Visual */
     color: var(--layout-text-color-fourth);
@@ -1206,16 +1209,22 @@ body {
      /* Positioning */
     /* Box Model */
     display: block;
+    margin-bottom: 10px;
     width: 100%;
+    height: 40px;
+    padding-left: 28px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     /* Typography */
     /* Visual */
+    border-radius: 4px;
+    outline: none;
     /* Misc */
 }
 
 .policy-input {
     /* Positioning */
     position: absolute;
-    top: 0;
+    top: -12px;
     left: 4px;
     /* Box Model */
     display: inline-block;
@@ -1237,7 +1246,16 @@ body {
     /* Misc */
     
 }
-
+.comments {
+    /* Positioning */
+    /* Box Model */
+    height: 120px;
+    padding: 12px 16px;
+    /* Typography */
+    /* Visual */
+    resize: none;
+    /* Misc */
+}
 .modal-form-submit {
     /* Positioning */
     /* Box Model */
@@ -1246,5 +1264,18 @@ body {
     padding: 10px 80px;
     /* Typography */
     /* Visual */
+    /* Misc */
+}
+
+.form-icon {
+    /* Positioning */
+    position: absolute;
+    top: 55%;
+    left: 15px;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    fill: var(--layout-text-color-second);
+    stroke: var(--layout-text-color-second);
     /* Misc */
 }
