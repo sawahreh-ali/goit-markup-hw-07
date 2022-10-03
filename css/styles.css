@@ -868,7 +868,7 @@ body {
 .icon-send {
     /* Positioning */
     /* Box Model */
-    margin-left: 30px;
+    margin-left: 20px;
     /* Typography */
     /* Visual */
     /* Misc */
@@ -971,8 +971,8 @@ body {
     /* Positioning */
     /* Box Model */
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     /* column-gap: 93px; */
     /* Typography */
     /* Visual */
@@ -1122,9 +1122,9 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 48px;
     margin-left: 12px;
     height: 50px;
+    width: 200px;
     /* Typography */
     /* Visual */
     border-radius: 4px;
@@ -1143,5 +1143,18 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     caret-color: var(--layout-text-color-third);
+    color: var(--layout-text-color-third);
     /* Misc */
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-email:hover,
+.footer-form-email:focus {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        border-color: var(--layout-text-color-third);
+        outline: none;
+        /* Misc */
 }
