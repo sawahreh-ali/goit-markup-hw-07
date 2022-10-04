@@ -396,33 +396,46 @@
             <h3 class="modal-form-title">Leave your information and we'll call you back</h3>
             <form action="Javascript: void(0)" autocomplete="off" method="POST">
                 <label for="name" class="modal-form-label">
-                    <span>Name</span>
-                    <input type="text" id="name" class="modal-form-input">
-                    <svg class="icon form-icon" width="12" height="12">
-                        <use href="./images/icons.svg#icon-name"></use>
-                    </svg>
+                    <span class="form-input-description">Name</span>
+                    <div class="input-icon-wrapper">
+                        <svg class="icon form-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                        <input type="text" id="name" class="modal-form-input">
+                    </div>
                 </label>
                 <label for="tel" class="modal-form-label">
-                    <span>Telephone</span>
-                    <input type="tel" id="tel" class="modal-form-input">
-                    <svg class="icon form-icon" width="12" height="12">
-                        <use href="./images/icons.svg#icon-telephone"></use>
-                    </svg>
+                    <span class="form-input-description">Telephone</span>
+                    <div class="input-icon-wrapper">
+                        <svg class="icon form-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-telephone"></use>
+                        </svg>
+                        <input type="tel" id="tel" class="modal-form-input">
+                    </div>
                 </label>
                 <label for="email" class="modal-form-label">
-                    <span>E-mail</span>
-                    <input type="email" id="email" class="modal-form-input">
-                    <svg class="icon form-icon" width="12" height="12">
-                        <use href="./images/icons.svg#icon-mail"></use>
-                    </svg>
+                    <span class="form-input-description">E-mail</span>
+                    <div class="input-icon-wrapper">
+                        <svg class="icon form-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        <input type="email" id="email" class="modal-form-input">
+                    </div>
+
                 </label>
                 <label for="comments" class="modal-form-label">
-                    <span>Comments</span>
+                    <span class="form-input-description">Comments</span>
                     <textarea id="comments" class="comments modal-form-input" placeholder="Enter the text"></textarea>
                 </label>
-                <label for="policy" class="modal-form-label policy-label">
-                    <input type="checkbox" id="policy" class="modal-form-input policy-input">
-                    <span>I agree with the newsletter and accept the Terms and <br> Conditions</span>
+                <label class="agree-check">
+                    <input type="checkbox" class="checkmark" name="agreement" value="agree" />
+                    <svg class="icon" width="16" height="16">
+                        <use href="./images/icons.svg#form-check"></use>
+                    </svg>
+                    <span class="terms-description">
+                        I agree with the newsletter and accept the
+                            <a href="#" class="terms link">Terms and <br> Conditions </a>
+                    </span>
                 </label>
                 <button type="submit" class="modal-form-submit button">Send</button>
             </form>

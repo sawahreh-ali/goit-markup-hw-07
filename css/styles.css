@@ -1080,8 +1080,7 @@ body {
     /* Box Model */
     display: flex;
     justify-content: center;
-    width: 528px;
-    height: 581px;
+    flex-direction: column;
     padding: 40px;
     /* Typography */
     /* Visual */
@@ -1122,6 +1121,7 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 .close-button:hover,
 .close-button:focus {
     /* Positioning */
@@ -1175,51 +1175,44 @@ body {
     outline: none;
     /* Misc */
 }
+
 .modal-form-title {
     /* Positioning */
     /* Box Model */
-    margin-bottom: 12px;
+    margin-bottom: 30px;
     /* Typography */
     font-size: 20px;
     /* Visual */
     /* Misc */
 }
 
-.form-feild:not(:last-of-type) {
-    /* Positioning */
-    position: relative;
-    /* Box Model */
-    margin-bottom: 10px;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
-.form-feild:last-of-type {
-    /* Positioning */
-    position: relative;
-    /* Box Model */
-    margin-top: 20px;
-    margin-bottom: 30px;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
-
 .modal-form-label {
     /* Positioning */
+    position: relative;
     /* Box Model */
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 30px;
     /* Typography */
+    font-family: 'Roboto';
+    font-size: 12px;
+    letter-spacing: 1%;
     /* Visual */
     color: var(--layout-text-color-fourth);
     /* Misc */
 }
 
+.form-input-description {
+    /* Positioning */
+    position: absolute;
+    top: -16px;
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
 .modal-form-input {
-     /* Positioning */
+    /* Positioning */
     /* Box Model */
     display: block;
     margin-bottom: 10px;
@@ -1233,52 +1226,44 @@ body {
     /* Misc */
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-input:hover, 
-.modal-form-input:focus {
-/* Positioning */
+
+.input-icon-wrapper {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    color: var(--layout-text-color-second);
+    /* Misc */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.input-icon-wrapper:hover {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    color: var(--layout-text-color-main);
+    /* Misc */
+
+}
+
+.modal-form-input:hover,
+.modal-form-input:focus,
+.modal-form-input:hover .form-icon,
+.form-icon:hover,
+.form-icon:hover~.modal-form-input {
+    /* Positioning */
     /* Box Model */
     /* Typography */
     /* Visual */
     outline: none;
-    border-color: var(--layout-text-color-main) ;
-    /* Misc */
-}
-
-.modal-form-input:hover ~ .form-icon, 
-.modal-form-input:focus ~ .form-icon {
-/* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
+    border-color: var(--layout-text-color-main);
     fill: var(--layout-text-color-main);
     /* Misc */
 }
 
-.policy-input {
-    /* Positioning */
-    position: absolute;
-    top: -12px;
-    left: 4px;
-    /* Box Model */
-    display: inline-block;
-    width: fit-content;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-    
-}
 
-.policy-label {
-    /* Positioning */
-    /* Box Model */
-    display: inline-block;
-    width: fit-content;
-    padding: 0 26px;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-    
-}
 .comments {
     /* Positioning */
     /* Box Model */
@@ -1289,6 +1274,7 @@ body {
     resize: none;
     /* Misc */
 }
+
 .modal-form-submit {
     /* Positioning */
     /* Box Model */
@@ -1305,10 +1291,61 @@ body {
 .form-icon {
     /* Positioning */
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 15px;
     /* Box Model */
+    transform: translateY(-50%);
     /* Typography */
     /* Visual */
+    fill: currentColor;
     /* Misc */
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.terms,
+.terms-description {
+      /* Positioning */
+      /* Box Model */
+      /* Typography */
+      font-family: 'Roboto';
+      font-size: 14px;
+      letter-spacing: 1%;
+      /* Visual */
+      color: var(--layout-text-color-fourth);
+      /* Misc */
+}
+
+.agree-check {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 34px;
+  }
+  
+  .agree-check .checkmark {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .agree-check .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    fill: none;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .agree-check .checkmark:focus + .icon,
+  .agree-check .checkmark:checked:focus + .icon {
+    outline: 2px solid #212121;
+  }
+  
+  .agree-check .checkmark:checked + .icon {
+    background-color: #2196f3;
+    border-color: #2196f3;
+    fill: #ffffff;
+    outline: none;
+  }
