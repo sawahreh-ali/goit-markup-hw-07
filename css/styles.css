@@ -193,7 +193,7 @@ body {
     /* Misc */
 }
 
-.contacts-list-item:not(:last-child) {
+.contacts-list__item:not(:last-child) {
     /* Positioning */
     /* Box Model */
     margin-right: 50px;
@@ -272,8 +272,8 @@ body {
     /* Misc */
 }
 
-.nav-link,
-.header-contacts-link {
+.nav__link,
+.contacts-list__link {
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -287,7 +287,7 @@ body {
     /* Misc */
 }
 
-.nav-link {
+.nav__link {
     /* Positioning */
     /* Box Model */
     display: block;
@@ -297,7 +297,7 @@ body {
     /* Misc */
 }
 
-.nav-list-item {
+.nav-list__item {
     /* Positioning */
     position: relative;
     /* Box Model */
@@ -306,7 +306,7 @@ body {
     /* Misc */
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
     /* Positioning */
     /* Box Model */
     display: block;
@@ -316,7 +316,7 @@ body {
     /* Misc */
 }
 
-.header-contacts-link {
+.contacts-list__link {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -325,7 +325,7 @@ body {
     /* Misc */
 }
 
-.nav-link-current {
+.nav__link--current {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -334,7 +334,7 @@ body {
     /* Misc */
 }
 
-.nav-link-current::after {
+.nav__link--current::after {
     /* Positioning */
     position: absolute;
     bottom: -1px;
