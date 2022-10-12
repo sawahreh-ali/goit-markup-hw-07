@@ -233,8 +233,8 @@ body {
 
 .hero__button:hover,
 .hero__button:focus,
-.footer-submit-button:hover,
-.footer-submit-button:focus,
+.footer-form__submit:hover,
+.footer-form__submit:focus,
 .modal-form-submit:hover,
 .modal-form-submit:focus {
     /* Positioning */
@@ -375,7 +375,7 @@ body {
 }
 
 .hero__button,
-.footer-submit-button,
+.footer-form__submit,
 .modal-form-submit {
     /* Positioning */
     /* Box Model */
@@ -479,7 +479,7 @@ body {
 }
 
 
-.features{
+.features {
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -884,7 +884,7 @@ body {
 }
 
 .our-team__accounts,
-.webiste-social-accounts-icons-list {
+.footer__social-accounts {
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -897,7 +897,7 @@ body {
 }
 
 
-.webiste-social-account-link {
+.footer__social-account-link {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -908,7 +908,7 @@ body {
 
 
 .our-team__account-link,
-.webiste-social-account-link {
+.footer__social-account-link {
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -925,7 +925,7 @@ body {
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.webiste-social-account-link {
+.footer__social-account-link {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -935,9 +935,9 @@ body {
 }
 
 .our-team__account-link:hover,
-.webiste-social-account-link:hover,
+.footer__social-account-link:hover,
 .our-team__account-link:focus,
-.webiste-social-account-link:focus {
+.footer__social-account-link:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -948,8 +948,7 @@ body {
 
 }
 
-.social-accounts-title,
-.news-letter-title {
+.footer__title {
     /* Positioning */
     /* Box Model */
     margin-bottom: 20px;
@@ -976,8 +975,7 @@ body {
 
 }
 
-.social-accounts-wrapper,
-.footer-form-wrapper {
+.footer__wrapper {
     /* Positioning */
     /* Box Model */
     padding-top: 15px;
@@ -986,7 +984,7 @@ body {
     /* Misc */
 }
 
-.customers{
+.customers {
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -1114,7 +1112,7 @@ body {
     /* Misc */
 }
 
-.footer-submit-button {
+.footer-form__submit {
     /* Positioning */
     position: relative;
     /* Box Model */
@@ -1130,7 +1128,7 @@ body {
     /* Misc */
 }
 
-.footer-form-email {
+.footer-form__email {
     /* Positioning */
     /* Box Model */
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1147,8 +1145,8 @@ body {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form-email:hover,
-.footer-form-email:focus {
+.footer-form__email:hover,
+.footer-form__email:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -1283,17 +1281,18 @@ body {
     /* Misc */
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .terms,
 .terms-description {
-      /* Positioning */
-      /* Box Model */
-      /* Typography */
-      font-family: 'Roboto';
-      font-size: 14px;
-      letter-spacing: 1%;
-      /* Visual */
-      color: var(--layout-text-color-fourth);
-      /* Misc */
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    font-family: 'Roboto';
+    font-size: 14px;
+    letter-spacing: 1%;
+    /* Visual */
+    color: var(--layout-text-color-fourth);
+    /* Misc */
 }
 
 .agree-check {
@@ -1301,15 +1300,15 @@ body {
     justify-content: center;
     align-items: start;
     margin-bottom: 34px;
-  }
-  
-  .agree-check .checkmark {
+}
+
+.agree-check .checkmark {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-  }
-  
-  .agree-check .icon {
+}
+
+.agree-check .icon {
     width: 16px;
     height: 16px;
     margin-right: 7px;
@@ -1317,17 +1316,17 @@ body {
     border: 2px solid #212121;
     border-radius: 2px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .agree-check .checkmark:focus + .icon,
-  .agree-check .checkmark:checked:focus + .icon {
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agree-check .checkmark:focus+.icon,
+.agree-check .checkmark:checked:focus+.icon {
     outline: 2px solid #212121;
-  }
-  
-  .agree-check .checkmark:checked + .icon {
+}
+
+.agree-check .checkmark:checked+.icon {
     background-color: #2196f3;
     border-color: #2196f3;
     fill: #ffffff;
     outline: none;
-  }
+}
