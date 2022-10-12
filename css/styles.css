@@ -235,8 +235,8 @@ body {
 .hero__button:focus,
 .footer-form__submit:hover,
 .footer-form__submit:focus,
-.modal-form-submit:hover,
-.modal-form-submit:focus {
+.modal-form__submit:hover,
+.modal-form__submit:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -376,7 +376,7 @@ body {
 
 .hero__button,
 .footer-form__submit,
-.modal-form-submit {
+.modal-form__submit {
     /* Positioning */
     /* Box Model */
     padding: 10px 20px;
@@ -1054,7 +1054,7 @@ body {
         opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-content {
+.modal__content {
     /* Positioning */
     position: relative;
     /* Box Model */
@@ -1070,7 +1070,7 @@ body {
     /* Misc */
 }
 
-.is-hidden {
+.modal--is-hidden {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -1081,7 +1081,7 @@ body {
     /* Misc */
 }
 
-.close-button {
+.modal__close {
     /* Positioning */
     position: absolute;
     top: 4px;
@@ -1102,8 +1102,8 @@ body {
 
 }
 
-.close-button:hover,
-.close-button:focus {
+.modal__close:hover,
+.modal__close:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -1156,7 +1156,7 @@ body {
     /* Misc */
 }
 
-.modal-form-title {
+.modal__title {
     /* Positioning */
     /* Box Model */
     margin-bottom: 30px;
@@ -1166,7 +1166,7 @@ body {
     /* Misc */
 }
 
-.modal-form-label {
+.modal-form__label {
     /* Positioning */
     position: relative;
     /* Box Model */
@@ -1181,7 +1181,7 @@ body {
     /* Misc */
 }
 
-.form-input-description {
+.modal-form__input-description {
     /* Positioning */
     position: absolute;
     top: -16px;
@@ -1191,7 +1191,7 @@ body {
     /* Misc */
 }
 
-.modal-form-input {
+.modal-form__input {
     /* Positioning */
     /* Box Model */
     display: block;
@@ -1207,7 +1207,7 @@ body {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-icon-wrapper {
+.modal-form__input-wrapper {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -1218,7 +1218,7 @@ body {
 
 }
 
-.input-icon-wrapper:hover {
+.modal-form__input-wrapper:hover {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -1228,11 +1228,11 @@ body {
 
 }
 
-.modal-form-input:hover,
-.modal-form-input:focus,
-.modal-form-input:hover .form-icon,
-.form-icon:hover,
-.form-icon:hover~.modal-form-input {
+.modal-form__input:hover,
+.modal-form__input:focus,
+.modal-form__input:hover .modal-form__icon,
+.modal-form__icon:hover,
+.modal-form__icon:hover~.modal-form-input {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -1255,7 +1255,7 @@ body {
     /* Misc */
 }
 
-.modal-form-submit {
+.modal-form__submit {
     /* Positioning */
     /* Box Model */
     display: block;
@@ -1268,7 +1268,7 @@ body {
 
 }
 
-.form-icon {
+.modal-form__icon {
     /* Positioning */
     position: absolute;
     top: 50%;
