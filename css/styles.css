@@ -206,8 +206,8 @@ body {
 
 .link:hover,
 .link:focus,
-.footer-link:hover,
-.footer-link:focus {
+.footer__address-link:hover,
+.footer__address-link:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -417,7 +417,7 @@ body {
     /* Misc */
 }
 
-.footer-link {
+.footer__address-link {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -430,8 +430,8 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer__address-link:hover,
+.footer__address-link:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -449,7 +449,7 @@ body {
     /* Misc */
 }
 
-.logo-footer {
+.footer__logo {
     /* Positioning */
     /* Box Model */
     display: block;
@@ -459,7 +459,7 @@ body {
     /* Misc */
 }
 
-.footer-list-item:not(:last-child) {
+.footer__address-item:not(:last-child) {
     /* Positioning */
     /* Box Model */
     margin-bottom: 4px;
@@ -963,7 +963,7 @@ body {
     /* Misc */
 }
 
-.footer-container {
+.footer__container {
     /* Positioning */
     /* Box Model */
     display: flex;
