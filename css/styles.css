@@ -625,9 +625,12 @@ body {
     /* Misc */
 }
 
-.projects-list {
+.projects{
     /* Positioning */
     /* Box Model */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     /* Typography */
     background-color: var(--layout-text-color-third);
     /* Visual */
@@ -714,18 +717,7 @@ body {
 }
 
 
-.projects-list {
-    /* Positioning */
-    /* Box Model */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
-.project-link {
+.projects__link {
     /* Positioning */
     /* Box Model */
     display: inline-block;
@@ -735,8 +727,8 @@ body {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover,
-.project-link:focus {
+.projects__link:hover,
+.projects__link:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -745,7 +737,7 @@ body {
     /* Misc */
 }
 
-.projects-overlay-container {
+.projects__overlay-container {
     /* Positioning */
     position: relative;
     /* Box Model */
@@ -755,7 +747,7 @@ body {
     /* Misc */
 }
 
-.projects-overlay-text {
+.projects__overlay-text {
     /* Positioning */
     position: absolute;
     top: 0;
@@ -777,7 +769,7 @@ body {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link .projects-overlay-text {
+.projects__link .projects__overlay-text {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -786,8 +778,8 @@ body {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover .projects-overlay-text,
-.project-link:focus .projects-overlay-text {
+.projects__link:hover .projects__overlay-text,
+.projects__link:focus .projects__overlay-text {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -796,7 +788,7 @@ body {
     transform: translateY(0);
 }
 
-.projects-wrapper {
+.projects__wrapper {
     /* Positioning */
     /* Box Model */
     border: 1px solid #EEEEEE;
@@ -807,7 +799,7 @@ body {
     /* Misc */
 }
 
-.projects-title {
+.projects__title {
     /* Positioning */
     /* Box Model */
     margin-bottom: 4px;
@@ -821,7 +813,7 @@ body {
     /* Misc */
 }
 
-.projects-description {
+.projects__description {
     /* Positioning */
     /* Box Model */
     /* Typography */
