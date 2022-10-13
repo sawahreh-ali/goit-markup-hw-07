@@ -1,0 +1,43 @@
+.container {
+    /* Positioning */
+    /* Box Model */
+    width: 1200px;
+    padding: 0 15px;
+    /* Typography */
+    margin: 0 auto;
+    /* Visual */
+    /* Misc */
+
+}
+
+.section {
+    /* Positioning */
+    /* Box Model */
+    padding: 94px 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.section--has-no-top-padding {
+    /* Positioning */
+    /* Box Model */
+    padding-top: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.section__title {
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 50px;
+    /* Typography */
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    /* Visual */
+    /* Misc */
+}

@@ -1,0 +1,336 @@
+/*------------------------------------------HERO-------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+.hero {
+    /* Positioning */
+    /* Box Model */
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* Typography */
+    /* Visual */
+    background-color: var(--background-color-header-footer);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Misc */
+}
+
+.hero__button:hover,
+.hero__button:focus {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background-color: var(--hover-color);
+    /* Misc */
+}
+.hero-container {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    /* Misc */
+}
+
+.hero__title {
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 30px;
+    /* Typography */
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 116%;
+    letter-spacing: .06em;
+    /* Visual */
+    color: var(--layout-text-color-third);
+    /* Misc */
+}
+
+.hero__button {
+    /* Positioning */
+    /* Box Model */
+    padding: 10px 20px;
+    /* Typography */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: .06em;
+    /* Visual */
+    background-color: var(--layout-text-color-main);
+    color: var(--layout-text-color-third);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* Misc */
+}
+
+/*------------------------------------------FEATURES-------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+.features {
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    /* flex-wrap: nowrap; */
+    column-gap: 30px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.features__item {
+    /* Positioning */
+    /* Box Model */
+    width: 270px;
+    /* flex-wrap: nowrap; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+
+}
+
+.features__title {
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 9.4px;
+    /* Typography */
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    /* Visual */
+    /* Misc */
+}
+
+.features__description {
+    /* Positioning */
+    /* Box Model */
+    /* width: 270px; */
+    /* Typography */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 146%;
+    /* Visual */
+    color: var(--layout-text-color-fourth);
+    /* Misc */
+}
+
+.features__icon-wrapper {
+    /* Positioning */
+    /* Box Model */
+    border-radius: 4px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    background: var(--background-color-section-second);
+    /* Misc */
+}
+
+/*------------------------------------------WHATWEDO-------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+.what-we-do {
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    column-gap: 30px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.what-we-do__item {
+    /* Positioning */
+    position: relative;
+    /* Box Model */
+    /* justify-content: center; */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.what-we-do__description {
+    /* Positioning */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* Box Model */
+    width: 100%;
+    padding: 27px 0;
+    /* justify-content: center; */
+    /* Typography */
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--layout-text-color-third);
+    text-align: center;
+    /* Visual */
+    background-color: rgba(47, 48, 58, 0.8);
+    ;
+    /* Misc */
+}
+
+/*------------------------------------------OURTEAM-------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+.our-team-section {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background-color: var(--background-color-section-second);
+    /* Misc */
+}
+
+.our-team {
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.our-team__item {
+    /* Positioning */
+    /* Box Model */
+    padding-bottom: 30px;
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    background-color: var(--layout-text-color-third);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    /* Misc */
+}
+
+.our-team__img {
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 30px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.our-team__title {
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 10px;
+    /* Typography */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    /* Visual */
+    /* Misc */
+}
+
+.our-team__role {
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 16px;
+    /* Typography */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    /* Visual */
+    color: var(--layout-text-color-fourth);
+    /* Misc */
+}
+.our-team__accounts {
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+.our-team__account-link {
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    /* Typography */
+    /* Visual */
+    color: var(--icon-color);
+    /* Misc */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team__account-link:hover,
+.our-team__account-link:focus {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    color: var(--layout-text-color-third);
+    background-color: var(--layout-text-color-main);
+    /* Misc */
+
+}
+/*------------------------------------------CUSTOMERS-------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+.customers {
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    justify-content: center;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.customers__item {
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    padding: 16px 32px;
+    /* Typography */
+    /* Visual */
+    color: var(--icon-color);
+    /* Misc */
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers__item:hover,
+.customers__item:focus {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    color: var(--layout-text-color-main);
+    border-color: var(--layout-text-color-main);
+    /* Misc */
+}
+
+.customers-section {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    text-align: center;
+    /* Visual */
+    /* Misc */
+}
+

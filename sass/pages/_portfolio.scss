@@ -1,0 +1,177 @@
+/*------------------------------------------FILTERS-------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+.filters{
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    margin-bottom: 50px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.filters__button {
+    /* Positioning */
+    /* Box Model */
+    padding: 6px 26px;
+    /* Typography */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 139%;
+    /* Visual */
+    /* Misc */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters__button:hover,
+.filters__button:focus {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background-color: var(--layout-text-color-main);
+    color: var(--layout-text-color-third);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    /* Misc */
+}
+
+.filters--current {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background-color: var(--layout-text-color-main);
+    color: var(--layout-text-color-third);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    /* Misc */
+}
+
+
+/*------------------------------------------PROJECTS-------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+.projects{
+    /* Positioning */
+    /* Box Model */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* Typography */
+    background-color: var(--layout-text-color-third);
+    /* Visual */
+    /* Misc */
+}
+
+.projects__link {
+    /* Positioning */
+    /* Box Model */
+    display: inline-block;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__link:hover,
+.projects__link:focus {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    /* Misc */
+}
+
+.projects__overlay-container {
+    /* Positioning */
+    position: relative;
+    /* Box Model */
+    overflow: hidden;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.projects__overlay-text {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Box Model */
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    /* Typography */
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 3%;
+    /* Visual */
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--layout-text-color-third);
+    /* Misc */
+    transform: translatey(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__link .projects__overlay-text {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__link:hover .projects__overlay-text,
+.projects__link:focus .projects__overlay-text {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+    transform: translateY(0);
+}
+
+.projects__wrapper {
+    /* Positioning */
+    /* Box Model */
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    padding: 20px 24px;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.projects__title {
+    /* Positioning */
+    /* Box Model */
+    margin-bottom: 4px;
+    /* Typography */
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 171%;
+    letter-spacing: .06em;
+    /* Visual */
+    color: var(--layout-text-color-second);
+    /* Misc */
+}
+
+.projects__description {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* Visual */
+    color: var(--layout-text-color-fourth);
+    /* Misc */
+}
