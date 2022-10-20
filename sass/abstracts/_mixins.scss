@@ -1,0 +1,19 @@
+@function getColor($key){
+    @return map-get($colors, $key);
+}
+
+@mixin  transition($porperty) {
+    transition: $porperty 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin  twoTransitions($porperty1, $property2) {
+    transition: $porperty1 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $porperty2 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin display($display-type, $wrapping, $justification, $gap) {
+    display: $display-type;
+    flex-wrap: $wrapping;
+    gap: $gap;
+    justify-content: $justification;
+}

@@ -33,17 +33,6 @@ html {
     /* Misc */
 }
 
-img {
-    /* Positioning */
-    /* Box Model */
-    display: block;
-    max-width: 100%;
-    height: auto;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
 address {
     /* Positioning */
     /* Box Model */
@@ -51,50 +40,4 @@ address {
     /* Visual */
     /* Misc */
     font-style: normal;
-}
-
-.link {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    text-decoration: none;
-    color: inherit;
-    /* Misc */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    /* Misc */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.link:hover,
-.link:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    color: var(--layout-text-color-main);
-    /* Visual */
-    /* Misc */
-}
-
-.button {
-    /* Positioning */
-    /* Box Model */
-    border: none;
-    border-radius: 4px;
-    /* Typography */
-    font-family: 'Roboto', 'Sans Serif';
-    letter-spacing: .03em;
-    /* Visual */
-    background-color: var(--background-color-section-second);
-    cursor: pointer;
-    /* Misc */
-
 }

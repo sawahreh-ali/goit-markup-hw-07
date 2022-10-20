@@ -1,55 +1,59 @@
-body {
+%img {
     /* Positioning */
     /* Box Model */
-    /* width: 1600px; */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+
+%link {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    text-decoration: none;
+    color: inherit;
+    /* Misc */
+    @include transition(color);
+    &:hover,
+    &:focus {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    color: getColor('layoutThemeMain');
+    /* Visual */
+    /* Misc */
+}
+
+}
+
+%list {
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    /* Misc */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+%button {
+    /* Positioning */
+    /* Box Model */
+    border: none;
+    border-radius: 4px;
     /* Typography */
     font-family: $main-font;
     letter-spacing: .03em;
-    font-size: 14px;
     /* Visual */
-    color: var(--layout-text-color-second);
-    /* Misc */
-}
-.container {
-    /* Positioning */
-    /* Box Model */
-    width: 1200px;
-    padding: 0 15px;
-    /* Typography */
-    margin: 0 auto;
-    /* Visual */
+    background-color: getColor('layoutTextSecond');
+    cursor: pointer;
     /* Misc */
 
-}
-
-.section {
-    /* Positioning */
-    /* Box Model */
-    padding: 94px 0;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
-.section--has-no-top-padding {
-    /* Positioning */
-    /* Box Model */
-    padding-top: 0;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
-.section__title {
-    /* Positioning */
-    /* Box Model */
-    margin-bottom: 50px;
-    /* Typography */
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 100%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    /* Visual */
-    /* Misc */
 }

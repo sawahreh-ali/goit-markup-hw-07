@@ -1,18 +1,9 @@
-.footer__address-link:hover,
-.footer__address-link:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    color: var(--layout-text-color-main);
-    /* Visual */
-    /* Misc */
-}
 .footer {
     /* Positioning */
     /* Box Model */
     /* Typography */
     /* Visual */
-    background-color: var(--background-color-header-footer);
+    background-color: getColor('backgroundHeader');
     /* Misc */
 }
 .footer__address-link {
@@ -23,19 +14,18 @@
     font-size: 14px;
     line-height: 146%;
     /* Visual */
-    color: #ffffff3c;
+    color: getColor('footerLinkColor');
     /* Misc */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__address-link:hover,
-.footer__address-link:focus {
+    @include transition(color);
+    &:hover,
+    &:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
+    color: getColor('layoutTextSecond')
     /* Visual */
-    color: var(--layout-text-color-third);
     /* Misc */
+}
 }
 
 .footer {
@@ -69,10 +59,7 @@
 .footer__social-accounts {
     /* Positioning */
     /* Box Model */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    @include display(flex, wrap, center, 10px);
     /* Typography */
     /* Visual */
     /* Misc */
@@ -90,32 +77,18 @@
 .footer__social-account-link {
     /* Positioning */
     /* Box Model */
-    display: flex;
-    justify-content: center;
+    @include display(flex, wrap, center, 0);
     align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     /* Typography */
     /* Visual */
-    color: var(--icon-color);
+    color: getColor('iconColor');
     /* Misc */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.footer__social-account-link {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    color: var(--layout-text-color-third);
-    /* Misc */
-}
-
-.footer__social-account-link:hover,
-.footer__social-account-link:focus {
+    @include twoTransitions(color, background-color);
+    &:hover,
+    &:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -125,6 +98,8 @@
     /* Misc */
 
 }
+}
+
 .footer__title {
     /* Positioning */
     /* Box Model */
@@ -134,7 +109,7 @@
     font-size: 14px;
     line-height: 100%;
     /* Visual */
-    color: var(--layout-text-color-third);
+    color: getColor('layoutTextThird');
     text-transform: uppercase;
     /* Misc */
 }
@@ -142,9 +117,7 @@
 .footer__container {
     /* Positioning */
     /* Box Model */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include display(flex, wrap, space-between, 0);
     /* column-gap: 93px; */
     /* Typography */
     /* Visual */
