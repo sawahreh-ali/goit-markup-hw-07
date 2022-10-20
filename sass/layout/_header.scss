@@ -40,7 +40,7 @@
     /* margin: 0 auto; */
     /* Typography */
     /* Visual */
-    /* Misc */    
+    /* Misc */
 }
 
 
@@ -51,6 +51,7 @@
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
+
     /* Typography */
     /* Visual */
     /* Misc */
@@ -80,15 +81,16 @@
     color: getColor('layoutThemeMain');
     /* Misc */
     @include transition(color);
+
     &:hover,
     &:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    color: getColor('hoverColor');
-    /* Misc */
-}
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        color: getColor('hoverColor');
+        /* Misc */
+    }
 }
 
 
@@ -114,6 +116,7 @@
     /* Box Model */
     display: block;
     padding: 32px 0 31px 0;
+
     /* Typography */
     /* Visual */
     /* Misc */
@@ -123,6 +126,7 @@
         /* Typography */
         /* Visual */
         color: getColor('layoutThemeMain');
+
         /* Misc */
         &::after {
             /* Positioning */
@@ -172,7 +176,3 @@
     color: getColor('layoutTextThird');
     /* Misc */
 }
-
-
-
-

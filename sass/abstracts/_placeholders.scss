@@ -1,5 +1,6 @@
 @import './mixins';
 @import '../base/typography';
+
 %img {
     /* Positioning */
     /* Box Model */
@@ -21,15 +22,16 @@
     color: inherit;
     /* Misc */
     @include transition(color);
+
     &:hover,
     &:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    color: getColor('layoutThemeMain');
-    /* Visual */
-    /* Misc */
-}
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        color: getColor('layoutThemeMain');
+        /* Visual */
+        /* Misc */
+    }
 
 }
 

@@ -90,9 +90,9 @@
         /* Typography */
         /* Visual */
         /* Misc */
-    
+
     }
-    
+
     &__title {
         /* Positioning */
         /* Box Model */
@@ -104,7 +104,7 @@
         /* Visual */
         /* Misc */
     }
-    
+
     &__description {
         /* Positioning */
         /* Box Model */
@@ -117,7 +117,7 @@
         color: getColor('layoutTextThird');
         /* Misc */
     }
-    
+
     &__icon-wrapper {
         /* Positioning */
         /* Box Model */
@@ -130,7 +130,7 @@
         background: getColor('backgroundSectionSecond');
         /* Misc */
     }
-    
+
 }
 
 /*------------------------------------------WHATWEDO-------------------------------------------------*/
@@ -175,7 +175,7 @@
         ;
         /* Misc */
     }
-    
+
 }
 
 
@@ -223,6 +223,7 @@
     /* Visual */
     /* Misc */
 }
+
 .our-team__title {
     /* Positioning */
     /* Box Model */
@@ -247,6 +248,7 @@
     color: getColor('layoutTextThird');
     /* Misc */
 }
+
 .our-team__accounts {
     @extend %list;
     /* Positioning */
@@ -256,6 +258,7 @@
     /* Visual */
     /* Misc */
 }
+
 .our-team__account-link {
     @extend %link;
     /* Positioning */
@@ -269,7 +272,7 @@
     /* Visual */
     color: getColor('iconColor');
     /* Misc */
-    @include  twoTransitions(color, background-color);
+    @include twoTransitions(color, background-color);
 
     &:hover,
     &:focus {
@@ -304,7 +307,7 @@
         /* Visual */
         /* Misc */
     }
-    
+
 }
 
 .customers__item {
@@ -332,4 +335,3 @@
         /* Misc */
     }
 }
-

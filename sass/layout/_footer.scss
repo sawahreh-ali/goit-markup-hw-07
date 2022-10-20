@@ -20,7 +20,7 @@
         text-transform: uppercase;
         /* Misc */
     }
-    
+
     &__container {
         /* Positioning */
         /* Box Model */
@@ -29,9 +29,9 @@
         /* Typography */
         /* Visual */
         /* Misc */
-    
+
     }
-    
+
     &__wrapper {
         /* Positioning */
         /* Box Model */
@@ -70,15 +70,16 @@
     color: getColor('footerLinkColor');
     /* Misc */
     @include transition(color);
+
     &:hover,
     &:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    color: getColor('layoutTextSecond')
-    /* Visual */
-    /* Misc */
-}
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        color: getColor('layoutTextSecond')
+            /* Visual */
+            /* Misc */
+    }
 }
 
 
@@ -116,17 +117,16 @@
     background-color: rgba(255, 255, 255, 0.1);
     /* Misc */
     @include twoTransitions(color, background-color);
+
     &:hover,
     &:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    color: getColor('layoutTextSecond');
-    background-color: getColor('layoutThemeMain');
-    /* Misc */
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        color: getColor('layoutTextSecond');
+        background-color: getColor('layoutThemeMain');
+        /* Misc */
 
+    }
 }
-}
-
-

@@ -1,8 +1,7 @@
 /*------------------------------------------FOOTERFORM-------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
 
-.footer-form__submit,
-.modal-form__submit {
+.footer-form__submit {
     @extend %button;
     /* Positioning */
     /* Box Model */
@@ -21,6 +20,7 @@
 }
 
 .footer-form__submit {
+    @extend %button;
     /* Positioning */
     position: relative;
     /* Box Model */
@@ -32,16 +32,17 @@
     /* Typography */
     /* Visual */
     border-radius: 4px;
+
     /* Misc */
     &:hover,
-    &:focus{
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    background-color: getColor('hoverColor');
-    /* Misc */
-}
+    &:focus {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        background-color: getColor('hoverColor');
+        /* Misc */
+    }
 }
 
 .footer-form__email {
@@ -62,20 +63,21 @@
 
     &:hover,
     &:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    border-color: getColor('layoutTextSecond');
-    outline: none;
-    /* Misc */
-}
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        border-color: getColor('layoutTextSecond');
+        outline: none;
+        /* Misc */
+    }
 }
 
 
 /*------------------------------------------MODAL-------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
 .modal-form {
+
     &__icon:hover,
     &__icon:hover~&-input {
         /* Positioning */
@@ -87,7 +89,9 @@
         fill: getColor('layoutThemeMain');
         /* Misc */
     }
+
     &__submit {
+        @extend %button;
         /* Positioning */
         /* Box Model */
         padding: 10px 20px;
@@ -102,17 +106,17 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         /* Misc */
         @include threeTransitions(border-color, box-shadow, color);
-    
-    
+
+
         &:hover,
         &:focus {
-        /* Positioning */
-        /* Box Model */
-        /* Typography */
-        /* Visual */
-        background-color: getColor('hoverColor');
-        /* Misc */
-    }
+            /* Positioning */
+            /* Box Model */
+            /* Typography */
+            /* Visual */
+            background-color: getColor('hoverColor');
+            /* Misc */
+        }
     }
 
     &__label {
@@ -144,7 +148,7 @@
         border-radius: 4px;
         /* Misc */
         @include transition(border-color);
-    
+
         &-description {
             /* Positioning */
             position: absolute;
@@ -154,7 +158,7 @@
             /* Visual */
             /* Misc */
         }
-    
+
         &-wrapper {
             /* Positioning */
             /* Box Model */
@@ -171,13 +175,13 @@
                 /* Visual */
                 color: getColor('layoutThemeMain');
                 /* Misc */
-            
+
             }
-        
+
         }
-    
+
     }
-    
+
     &__input:hover,
     &__input:focus,
     &__input:hover &__icon,
@@ -203,9 +207,9 @@
         /* Visual */
         /* Misc */
         @include transition(background-color);
-    
+
     }
-    
+
     &__icon {
         /* Positioning */
         position: absolute;
@@ -218,8 +222,8 @@
         fill: currentColor;
         /* Misc */
         @include transition(fill);
-        }
-    
+    }
+
 }
 
 .modal {
@@ -249,9 +253,10 @@
         /* Visual */
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        background-color: getColor('layoutTextThird');
+        background-color: getColor('layoutTextSecond');
         /* Misc */
     }
+
     &--is-hidden {
         /* Positioning */
         /* Box Model */
@@ -262,7 +267,7 @@
         pointer-events: none;
         /* Misc */
     }
-    
+
     &__close {
         /* Positioning */
         position: absolute;
@@ -277,11 +282,11 @@
         /* Typography */
         /* Visual */
         border-radius: 50%;
-        background-color: getColor('layoutTextThird');
+        background-color: getColor('layoutTextSecond');
         /* Misc */
-        @include transition(color);    
+        @include transition(color);
     }
-    
+
     &__close:hover,
     &__close:focus {
         /* Positioning */
@@ -291,7 +296,7 @@
         color: getColor('layoutThemeMain');
         /* Misc */
     }
-    
+
     &__title {
         /* Positioning */
         /* Box Model */
@@ -301,7 +306,7 @@
         /* Visual */
         /* Misc */
     }
-    
+
 }
 
 
@@ -325,6 +330,10 @@
 }
 
 
+.terms {
+    @extend %link;
+}
+
 .terms,
 .terms-description {
     /* Positioning */
@@ -343,32 +352,32 @@
     justify-content: center;
     align-items: start;
     margin-bottom: 34px;
-}
 
-.agree-check .checkmark {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
+    & .checkmark {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
 
-.agree-check .icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 7px;
-    fill: none;
-    border: 2px solid #212121;
-    border-radius: 2px;
-    @include threeTransitions(border-color, background-color, fill);
-}
+        &:focus+.icon,
+        &:checked:focus+.icon {
+            outline: 2px solid #212121;
+        }
 
-.agree-check .checkmark:focus+.icon,
-.agree-check .checkmark:checked:focus+.icon {
-    outline: 2px solid #212121;
-}
+        &:checked+.icon {
+            background-color: #2196f3;
+            border-color: #2196f3;
+            fill: #ffffff;
+            outline: none;
+        }
+    }
 
-.agree-check .checkmark:checked+.icon {
-    background-color: #2196f3;
-    border-color: #2196f3;
-    fill: #ffffff;
-    outline: none;
+    & .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 7px;
+        fill: none;
+        border: 2px solid #212121;
+        border-radius: 2px;
+        @include threeTransitions(border-color, background-color, fill);
+    }
 }

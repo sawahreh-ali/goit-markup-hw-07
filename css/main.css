@@ -9,7 +9,7 @@
   /* Misc */
 }
 
-.our-team__account-link, .footer__social-account-link, .footer__address-link, .nav__link,
+.our-team__account-link, .terms, .footer__social-account-link, .footer__address-link, .nav__link,
 .contacts-list__link, .logo, .footer__logo {
   /* Positioning */
   /* Box Model */
@@ -20,8 +20,8 @@
   /* Misc */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-team__account-link:hover, .footer__social-account-link:hover, .footer__address-link:hover, .nav__link:hover,
-.contacts-list__link:hover, .logo:hover, .footer__logo:hover, .our-team__account-link:focus, .footer__social-account-link:focus, .footer__address-link:focus, .nav__link:focus,
+.our-team__account-link:hover, .terms:hover, .footer__social-account-link:hover, .footer__address-link:hover, .nav__link:hover,
+.contacts-list__link:hover, .logo:hover, .footer__logo:hover, .our-team__account-link:focus, .terms:focus, .footer__social-account-link:focus, .footer__address-link:focus, .nav__link:focus,
 .contacts-list__link:focus, .logo:focus, .footer__logo:focus {
   /* Positioning */
   /* Box Model */
@@ -42,8 +42,7 @@
   margin: 0;
 }
 
-.hero__button, .footer-form__submit,
-.modal-form__submit {
+.hero__button, .modal-form__submit, .footer-form__submit {
   /* Positioning */
   /* Box Model */
   border: none;
@@ -473,8 +472,7 @@ body {
 
 /*------------------------------------------FOOTERFORM-------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
-.footer-form__submit,
-.modal-form__submit {
+.footer-form__submit {
   /* Positioning */
   /* Box Model */
   padding: 10px 20px;
@@ -702,7 +700,7 @@ body {
   /* Visual */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background-color: #757575;
+  background-color: #fff;
   /* Misc */
 }
 .modal--is-hidden {
@@ -732,7 +730,7 @@ body {
   /* Typography */
   /* Visual */
   border-radius: 50%;
-  background-color: #757575;
+  background-color: #fff;
   /* Misc */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -784,13 +782,20 @@ body {
   align-items: start;
   margin-bottom: 34px;
 }
-
 .agree-check .checkmark {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-
+.agree-check .checkmark:focus + .icon, .agree-check .checkmark:checked:focus + .icon {
+  outline: 2px solid #212121;
+}
+.agree-check .checkmark:checked + .icon {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  fill: #ffffff;
+  outline: none;
+}
 .agree-check .icon {
   width: 16px;
   height: 16px;
@@ -799,18 +804,6 @@ body {
   border: 2px solid #212121;
   border-radius: 2px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.agree-check .checkmark:focus + .icon,
-.agree-check .checkmark:checked:focus + .icon {
-  outline: 2px solid #212121;
-}
-
-.agree-check .checkmark:checked + .icon {
-  background-color: #2196f3;
-  border-color: #2196f3;
-  fill: #ffffff;
-  outline: none;
 }
 
 /*------------------------------------------HERO-------------------------------------------------*/
