@@ -1,19 +1,30 @@
 /*------------------------------------------FILTERS-------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------*/
 .filters{
+    @extend %list;
     /* Positioning */
     /* Box Model */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 8px;
+    @include display(flex, wrap, center, 8px);
     margin-bottom: 50px;
     /* Typography */
     /* Visual */
     /* Misc */
+
+    &--current {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        background-color: getColor('layoutThemeMain');
+        color: getColor('layoutTextSecond');;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        /* Misc */
+    }
 }
 
 .filters__button {
+    @extend %button;
     /* Positioning */
     /* Box Model */
     padding: 6px 26px;
@@ -23,35 +34,22 @@
     line-height: 139%;
     /* Visual */
     /* Misc */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include threeTransitions(color, background-color, box-shadow);
+
+    &:hover,
+    &:focus {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        background-color: getColor('layoutThemeMain');
+        color: getColor('layoutTextSecond');
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        /* Misc */
+    }
 }
 
-.filters__button:hover,
-.filters__button:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    background-color: var(--layout-text-color-main);
-    color: var(--layout-text-color-third);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    /* Misc */
-}
-
-.filters--current {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    background-color: var(--layout-text-color-main);
-    color: var(--layout-text-color-third);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    /* Misc */
-}
 
 
 /*------------------------------------------PROJECTS-------------------------------------------------*/

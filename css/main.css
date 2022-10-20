@@ -31,7 +31,7 @@
   /* Misc */
 }
 
-.customers, .our-team__accounts, .our-team, .what-we-do, .features, .footer__social-accounts, .footer__address, .contacts-list, .nav-list {
+.filters, .customers, .our-team__accounts, .our-team, .what-we-do, .features, .footer__social-accounts, .footer__address, .contacts-list, .nav-list {
   /* Positioning */
   /* Box Model */
   /* Typography */
@@ -42,7 +42,7 @@
   margin: 0;
 }
 
-.hero__button, .modal-form__submit, .footer-form__submit {
+.filters__button, .hero__button, .modal-form__submit, .footer-form__submit {
   /* Positioning */
   /* Box Model */
   border: none;
@@ -51,7 +51,7 @@
   font-family: "Roboto", "Sans Serif";
   letter-spacing: 0.03em;
   /* Visual */
-  background-color: #212121;
+  background-color: #F5F4FA;
   cursor: pointer;
   /* Misc */
 }
@@ -1132,12 +1132,23 @@ body {
   /* Positioning */
   /* Box Model */
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  column-gap: 8px;
+  gap: 8px;
+  justify-content: center;
   margin-bottom: 50px;
   /* Typography */
   /* Visual */
+  /* Misc */
+}
+.filters--current {
+  /* Positioning */
+  /* Box Model */
+  /* Typography */
+  /* Visual */
+  background-color: #2196F3;
+  color: #fff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   /* Misc */
 }
 
@@ -1153,27 +1164,13 @@ body {
   /* Misc */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.filters__button:hover,
-.filters__button:focus {
+.filters__button:hover, .filters__button:focus {
   /* Positioning */
   /* Box Model */
   /* Typography */
   /* Visual */
-  background-color: var(--layout-text-color-main);
-  color: var(--layout-text-color-third);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  /* Misc */
-}
-
-.filters--current {
-  /* Positioning */
-  /* Box Model */
-  /* Typography */
-  /* Visual */
-  background-color: var(--layout-text-color-main);
-  color: var(--layout-text-color-third);
+  background-color: #2196F3;
+  color: #fff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   /* Misc */
