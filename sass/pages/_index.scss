@@ -187,16 +187,15 @@
     /* Box Model */
     /* Typography */
     /* Visual */
-    background-color: var(--background-color-section-second);
+    background-color: getColor('backgroundSectionSecond');
     /* Misc */
 }
 
 .our-team {
+    @extend %list;
     /* Positioning */
     /* Box Model */
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
+    @include display(flex, wrap, none, 30px);
     /* Typography */
     /* Visual */
     /* Misc */
@@ -209,13 +208,14 @@
     /* Typography */
     text-align: center;
     /* Visual */
-    background-color: var(--layout-text-color-third);
+    background-color: getColor('layoutTextSecond');
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     /* Misc */
 }
 
 .our-team__img {
+    @extend %img;
     /* Positioning */
     /* Box Model */
     margin-bottom: 30px;
@@ -244,48 +244,46 @@
     font-size: 16px;
     line-height: 100%;
     /* Visual */
-    color: var(--layout-text-color-fourth);
+    color: getColor('layoutTextThird');
     /* Misc */
 }
 .our-team__accounts {
+    @extend %list;
     /* Positioning */
     /* Box Model */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    @include display(flex, wrap, center, 10px);
     /* Typography */
     /* Visual */
     /* Misc */
 }
 .our-team__account-link {
+    @extend %link;
     /* Positioning */
     /* Box Model */
-    display: flex;
-    justify-content: center;
+    @include display(flex, wrap, center, 0);
     align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     /* Typography */
     /* Visual */
-    color: var(--icon-color);
+    color: getColor('iconColor');
     /* Misc */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include  twoTransitions(color, background-color);
+
+    &:hover,
+    &:focus {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        color: getColor('layoutTextSecond');
+        background-color: getColor('layoutThemeMain');
+        /* Misc */
+
+    }
 }
 
-.our-team__account-link:hover,
-.our-team__account-link:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    color: var(--layout-text-color-third);
-    background-color: var(--layout-text-color-main);
-    /* Misc */
-
-}
 /*------------------------------------------CUSTOMERS-------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------*/
 
