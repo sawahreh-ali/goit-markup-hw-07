@@ -20,7 +20,7 @@
   /* Misc */
 }
 
-.features, .footer__social-accounts, .footer__address, .contacts-list, .nav-list {
+.what-we-do, .features, .footer__social-accounts, .footer__address, .contacts-list, .nav-list {
   /* Positioning */
   /* Box Model */
   /* Typography */
@@ -928,14 +928,13 @@ body {
   /* Positioning */
   /* Box Model */
   display: flex;
-  /* justify-content: center; */
   flex-wrap: wrap;
-  column-gap: 30px;
+  gap: 30px;
+  justify-content: none;
   /* Typography */
   /* Visual */
   /* Misc */
 }
-
 .what-we-do__item {
   /* Positioning */
   position: relative;
@@ -945,7 +944,6 @@ body {
   /* Visual */
   /* Misc */
 }
-
 .what-we-do__description {
   /* Positioning */
   position: absolute;
@@ -959,7 +957,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  color: var(--layout-text-color-third);
+  color: #fff;
   text-align: center;
   /* Visual */
   background-color: rgba(47, 48, 58, 0.8);

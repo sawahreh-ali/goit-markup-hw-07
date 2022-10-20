@@ -137,47 +137,47 @@
 /*---------------------------------------------------------------------------------------------------*/
 
 .what-we-do {
+    @extend %list;
     /* Positioning */
     /* Box Model */
-    display: flex;
-    /* justify-content: center; */
-    flex-wrap: wrap;
-    column-gap: 30px;
+    @include display(flex, wrap, none, 30px);
     /* Typography */
     /* Visual */
     /* Misc */
+
+    &__item {
+        /* Positioning */
+        position: relative;
+        /* Box Model */
+        /* justify-content: center; */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+
+    &__description {
+        /* Positioning */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        /* Box Model */
+        width: 100%;
+        padding: 27px 0;
+        /* justify-content: center; */
+        /* Typography */
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: getColor('layoutTextSecond');
+        text-align: center;
+        /* Visual */
+        background-color: rgba(47, 48, 58, 0.8);
+        ;
+        /* Misc */
+    }
+    
 }
 
-.what-we-do__item {
-    /* Positioning */
-    position: relative;
-    /* Box Model */
-    /* justify-content: center; */
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
-.what-we-do__description {
-    /* Positioning */
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    /* Box Model */
-    width: 100%;
-    padding: 27px 0;
-    /* justify-content: center; */
-    /* Typography */
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: var(--layout-text-color-third);
-    text-align: center;
-    /* Visual */
-    background-color: rgba(47, 48, 58, 0.8);
-    ;
-    /* Misc */
-}
 
 /*------------------------------------------OURTEAM-------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------*/
