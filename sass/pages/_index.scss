@@ -288,51 +288,48 @@
 /*---------------------------------------------------------------------------------------------------*/
 
 .customers {
+    @extend %list;
     /* Positioning */
     /* Box Model */
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    justify-content: center;
+    @include display(flex, wrap, center, 30px);
     /* Typography */
     /* Visual */
     /* Misc */
+
+    &-section {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        text-align: center;
+        /* Visual */
+        /* Misc */
+    }
+    
 }
 
 .customers__item {
     /* Positioning */
     /* Box Model */
-    display: flex;
-    justify-content: center;
+    @include display(flex, wrap, center, 0);
     align-items: center;
-    border: 1px solid var(--icon-color);
+    border: 1px solid getColor('iconColor');
     border-radius: 4px;
     padding: 16px 32px;
     /* Typography */
     /* Visual */
-    color: var(--icon-color);
+    color: getColor('iconColor');
     /* Misc */
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    @include twoTransitions(border-color, color);
 
-.customers__item:hover,
-.customers__item:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    color: var(--layout-text-color-main);
-    border-color: var(--layout-text-color-main);
-    /* Misc */
-}
-
-.customers-section {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    text-align: center;
-    /* Visual */
-    /* Misc */
+    &:hover,
+    &:focus {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        color: getColor('layoutThemeMain');
+        border-color: getColor('layoutThemeMain');
+        /* Misc */
+    }
 }
 
