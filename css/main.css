@@ -31,7 +31,7 @@
   margin: 0;
 }
 
-.footer-form__submit,
+.hero__button, .footer-form__submit,
 .modal-form__submit {
   /* Positioning */
   /* Box Model */
@@ -818,16 +818,6 @@ body {
   background-size: cover;
   /* Misc */
 }
-
-.hero-container {
-  /* Positioning */
-  /* Box Model */
-  /* Typography */
-  text-align: center;
-  /* Visual */
-  /* Misc */
-}
-
 .hero__title {
   /* Positioning */
   /* Box Model */
@@ -838,7 +828,15 @@ body {
   line-height: 116%;
   letter-spacing: 0.06em;
   /* Visual */
-  color: var(--layout-text-color-third);
+  color: #fff;
+  /* Misc */
+}
+.hero-container {
+  /* Positioning */
+  /* Box Model */
+  /* Typography */
+  text-align: center;
+  /* Visual */
   /* Misc */
 }
 
@@ -852,8 +850,8 @@ body {
   line-height: 160%;
   letter-spacing: 0.06em;
   /* Visual */
-  background-color: var(--layout-text-color-main);
-  color: var(--layout-text-color-third);
+  background-color: #2196F3;
+  color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Misc */

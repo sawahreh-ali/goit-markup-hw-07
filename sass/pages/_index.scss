@@ -13,33 +13,35 @@
     background-position: center;
     background-size: cover;
     /* Misc */
+
+    &__title {
+        /* Positioning */
+        /* Box Model */
+        margin-bottom: 30px;
+        /* Typography */
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 116%;
+        letter-spacing: .06em;
+        /* Visual */
+        color: getColor('layoutTextSecond');
+        /* Misc */
+    }
+
+    &-container {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        text-align: center;
+        /* Visual */
+        /* Misc */
+    }
 }
 
 
-.hero-container {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    text-align: center;
-    /* Visual */
-    /* Misc */
-}
-
-.hero__title {
-    /* Positioning */
-    /* Box Model */
-    margin-bottom: 30px;
-    /* Typography */
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 116%;
-    letter-spacing: .06em;
-    /* Visual */
-    color: var(--layout-text-color-third);
-    /* Misc */
-}
 
 .hero__button {
+    @extend %button;
     /* Positioning */
     /* Box Model */
     padding: 10px 20px;
@@ -49,12 +51,10 @@
     line-height: 160%;
     letter-spacing: .06em;
     /* Visual */
-    background-color: var(--layout-text-color-main);
-    color: var(--layout-text-color-third);
+    background-color: getColor('layoutThemeMain');
+    color: getColor('layoutTextSecond');
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include threeTransitions(background-color, box-shadow, color);
     /* Misc */
 
     &:hover,
