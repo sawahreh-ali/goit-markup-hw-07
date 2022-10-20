@@ -30,6 +30,7 @@
 }
 
 .nav-list {
+    @extend %list;
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -39,11 +40,12 @@
     /* margin: 0 auto; */
     /* Typography */
     /* Visual */
-    /* Misc */
+    /* Misc */    
 }
 
 
 .contacts-list {
+    @extend %list;
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -65,6 +67,7 @@
 
 
 .logo {
+    @extend %link;
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -83,7 +86,7 @@
     /* Box Model */
     /* Typography */
     /* Visual */
-    color: var(--hover-color);
+    color: getColor('hoverColor');
     /* Misc */
 }
 }
@@ -92,6 +95,7 @@
 
 .nav__link,
 .contacts-list__link {
+    @extend %link;
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -118,7 +122,7 @@
         /* Box Model */
         /* Typography */
         /* Visual */
-        color: var(--layout-text-color-main);
+        color: getColor('layoutThemeMain');
         /* Misc */
         &::after {
             /* Positioning */
@@ -133,7 +137,7 @@
             border-radius: 2px;
             /* Typography */
             /* Visual */
-            background-color: var(--layout-text-color-main);
+            background-color: getColor('layoutThemeMain');
             /* Misc */
         }
     }
@@ -147,7 +151,7 @@
     /* Visual */
     /* Misc */
 
-    &__item:not(:last-child) {
+    &:not(:last-child) {
         /* Positioning */
         /* Box Model */
         display: block;
@@ -165,7 +169,7 @@
     /* Box Model */
     /* Typography */
     /* Visual */
-    color: var(--layout-text-color-fourth);
+    color: getColor('layoutTextThird');
     /* Misc */
 }
 
