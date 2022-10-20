@@ -7,7 +7,7 @@ body {
     letter-spacing: .03em;
     font-size: 14px;
     /* Visual */
-    color: var(--layout-text-color-second);
+    color: getColor('layoutTextSecond');
     /* Misc */
 }
 .container {

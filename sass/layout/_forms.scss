@@ -1,16 +1,5 @@
 /*------------------------------------------FOOTERFORM-------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
-.footer-form__submit:hover,
-.footer-form__submit:focus,
-.modal-form__submit:hover,
-.modal-form__submit:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    background-color: var(--hover-color);
-    /* Misc */
-}
 
 .footer-form__submit,
 .modal-form__submit {
@@ -23,21 +12,18 @@
     line-height: 160%;
     letter-spacing: .06em;
     /* Visual */
-    background-color: var(--layout-text-color-main);
-    color: var(--layout-text-color-third);
+    background-color: getColor('layoutThemeMain');
+    color: getColor('layoutTextSecond');
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* Misc */
+    @include threeTransitions(background-color, box-shadow, color);
 }
 
 .footer-form__submit {
     /* Positioning */
     position: relative;
     /* Box Model */
-    display: inline-flex;
-    justify-content: center;
+    @include display(inline-flex, wrap, center, 0);
     align-items: center;
     margin-left: 12px;
     height: 50px;
@@ -46,6 +32,15 @@
     /* Visual */
     border-radius: 4px;
     /* Misc */
+    &:hover,
+    &:focus{
+    /* Positioning */
+    /* Box Model */
+    /* Typography */
+    /* Visual */
+    background-color: getColor('hoverColor');
+    /* Misc */
+}
 }
 
 .footer-form__email {
@@ -56,65 +51,183 @@
     padding: 15px 16px;
     /* Typography */
     /* Visual */
-    background-color: var(--background-color-header-footer);
+    background-color: getColor('backgroundHeader');
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    caret-color: var(--layout-text-color-third);
-    color: var(--layout-text-color-third);
+    caret-color: getColor('layoutTextThird');
+    color: getColor('layoutTextThird');
     /* Misc */
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    @include transition(border-color);
 
-.footer-form__email:hover,
-.footer-form__email:focus {
+    &:hover,
+    &:focus {
     /* Positioning */
     /* Box Model */
     /* Typography */
     /* Visual */
-    border-color: var(--layout-text-color-third);
+    border-color: getColor('layoutTextSecond');
     outline: none;
     /* Misc */
 }
+}
+
 
 /*------------------------------------------MODAL-------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
+.modal-form {
+    &__icon:hover,
+    &__icon:hover~&-input {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        outline: none;
+        border-color: getColor('layoutThemeMain');
+        fill: getColor('layoutThemeMain');
+        /* Misc */
+    }
+    &__submit {
+        /* Positioning */
+        /* Box Model */
+        padding: 10px 20px;
+        /* Typography */
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: .06em;
+        /* Visual */
+        background-color: getColor('layoutThemeMain');
+        color: getColor('layoutTextSecond');
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        /* Misc */
+        @include threeTransitions(border-color, box-shadow, color);
+    
+    
+        &:hover,
+        &:focus {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        background-color: getColor('hoverColor');
+        /* Misc */
+    }
+    }
 
-.modal-form__submit:hover,
-.modal-form__submit:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    background-color: var(--hover-color);
-    /* Misc */
+    &__label {
+        /* Positioning */
+        position: relative;
+        /* Box Model */
+        display: block;
+        margin-bottom: 30px;
+        /* Typography */
+        font-family: $main-font;
+        font-size: 12px;
+        letter-spacing: 1%;
+        /* Visual */
+        color: getColor('layoutTextThird');
+        /* Misc */
+    }
+
+    &__input {
+        /* Positioning */
+        /* Box Model */
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 40px;
+        padding-left: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        /* Typography */
+        /* Visual */
+        border-radius: 4px;
+        /* Misc */
+        @include transition(border-color);
+    
+        &-description {
+            /* Positioning */
+            position: absolute;
+            top: -16px;
+            /* Box Model */
+            /* Typography */
+            /* Visual */
+            /* Misc */
+        }
+    
+        &-wrapper {
+            /* Positioning */
+            /* Box Model */
+            /* Typography */
+            /* Visual */
+            color: getColor('layoutTextMain');
+            /* Misc */
+            @include transition(color);
+
+            &:hover {
+                /* Positioning */
+                /* Box Model */
+                /* Typography */
+                /* Visual */
+                color: getColor('layoutThemeMain');
+                /* Misc */
+            
+            }
+        
+        }
+    
+    }
+    
+    &__input:hover,
+    &__input:focus,
+    &__input:hover &__icon,
+    &__icon:hover,
+    &__icon:hover~&__input {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        outline: none;
+        border-color: getColor('layoutThemeMain');
+        fill: getColor('layoutThemeMain');
+        /* Misc */
+    }
+
+    &__submit {
+        /* Positioning */
+        /* Box Model */
+        display: block;
+        margin: auto;
+        padding: 10px 80px;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+        @include transition(background-color);
+    
+    }
+    
+    &__icon {
+        /* Positioning */
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        /* Box Model */
+        transform: translateY(-50%);
+        /* Typography */
+        /* Visual */
+        fill: currentColor;
+        /* Misc */
+        @include transition(fill);
+        }
+    
 }
 
-.modal-form__submit {
-    /* Positioning */
-    /* Box Model */
-    padding: 10px 20px;
-    /* Typography */
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 160%;
-    letter-spacing: .06em;
-    /* Visual */
-    background-color: var(--layout-text-color-main);
-    color: var(--layout-text-color-third);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* Misc */
-}
 .modal {
     /* Positioning */
     position: fixed;
     top: 0;
     left: 0;
     /* Box Model */
-    display: flex;
-    justify-content: center;
+    @include display(flex, wrap, center, 0);
     align-items: center;
     width: 100%;
     height: 100%;
@@ -122,154 +235,81 @@
     /* Visual */
     background-color: rgba(0, 0, 0, 0.2);
     /* Misc */
-    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include twoTransitions(visibility, opacity);
+
+    &__content {
+        /* Positioning */
+        position: relative;
+        /* Box Model */
+        @include display(flex, wrap, center, 0);
+        flex-direction: column;
+        padding: 40px;
+        /* Typography */
+        /* Visual */
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        background-color: getColor('layoutTextThird');
+        /* Misc */
+    }
+    &--is-hidden {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        /* Misc */
+    }
+    
+    &__close {
+        /* Positioning */
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        /* Box Model */
+        @include display(flex, wrap, center, 0);
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        /* Typography */
+        /* Visual */
+        border-radius: 50%;
+        background-color: getColor('layoutTextThird');
+        /* Misc */
+        @include transition(color);    
+    }
+    
+    &__close:hover,
+    &__close:focus {
+        /* Positioning */
+        /* Box Model */
+        /* Typography */
+        /* Visual */
+        color: getColor('layoutThemeMain');
+        /* Misc */
+    }
+    
+    &__title {
+        /* Positioning */
+        /* Box Model */
+        margin-bottom: 30px;
+        /* Typography */
+        font-size: 20px;
+        /* Visual */
+        /* Misc */
+    }
+    
 }
 
-.modal__content {
-    /* Positioning */
-    position: relative;
-    /* Box Model */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 40px;
-    /* Typography */
-    /* Visual */
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    background-color: var(--layout-text-color-third);
-    /* Misc */
-}
 
-.modal--is-hidden {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    /* Misc */
-}
 
-.modal__close {
-    /* Positioning */
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    /* Box Model */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    /* Typography */
-    /* Visual */
-    border-radius: 50%;
-    background-color: var(--layout-text-color-third);
-    /* Misc */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
 
-.modal__close:hover,
-.modal__close:focus {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    color: var(--layout-text-color-main);
-    /* Misc */
-}
 
-.modal__title {
-    /* Positioning */
-    /* Box Model */
-    margin-bottom: 30px;
-    /* Typography */
-    font-size: 20px;
-    /* Visual */
-    /* Misc */
-}
 
-.modal-form__label {
-    /* Positioning */
-    position: relative;
-    /* Box Model */
-    display: block;
-    margin-bottom: 30px;
-    /* Typography */
-    font-family: 'Roboto';
-    font-size: 12px;
-    letter-spacing: 1%;
-    /* Visual */
-    color: var(--layout-text-color-fourth);
-    /* Misc */
-}
 
-.modal-form__input-description {
-    /* Positioning */
-    position: absolute;
-    top: -16px;
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
-.modal-form__input {
-    /* Positioning */
-    /* Box Model */
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 40px;
-    padding-left: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    /* Typography */
-    /* Visual */
-    border-radius: 4px;
-    /* Misc */
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form__input-wrapper {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    color: var(--layout-text-color-second);
-    /* Misc */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.modal-form__input-wrapper:hover {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    color: var(--layout-text-color-main);
-    /* Misc */
-
-}
-
-.modal-form__input:hover,
-.modal-form__input:focus,
-.modal-form__input:hover .modal-form__icon,
-.modal-form__icon:hover,
-.modal-form__icon:hover~.modal-form-input {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    outline: none;
-    border-color: var(--layout-text-color-main);
-    fill: var(--layout-text-color-main);
-    /* Misc */
-}
 
 
 .comments {
@@ -283,43 +323,17 @@
     /* Misc */
 }
 
-.modal-form__submit {
-    /* Positioning */
-    /* Box Model */
-    display: block;
-    margin: auto;
-    padding: 10px 80px;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.modal-form__icon {
-    /* Positioning */
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    /* Box Model */
-    transform: translateY(-50%);
-    /* Typography */
-    /* Visual */
-    fill: currentColor;
-    /* Misc */
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .terms,
 .terms-description {
     /* Positioning */
     /* Box Model */
     /* Typography */
-    font-family: 'Roboto';
+    font-family: $main-font;
     font-size: 14px;
     letter-spacing: 1%;
     /* Visual */
-    color: var(--layout-text-color-fourth);
+    color: getColor('layoutTextThird');
     /* Misc */
 }
 
@@ -343,8 +357,7 @@
     fill: none;
     border: 2px solid #212121;
     border-radius: 2px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include threeTransitions(border-color, background-color, fill);
 }
 
 .agree-check .checkmark:focus+.icon,

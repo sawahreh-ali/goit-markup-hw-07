@@ -8,7 +8,13 @@
 
 @mixin  twoTransitions($porperty1, $property2) {
     transition: $porperty1 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    $porperty2 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    $property2 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin  threeTransitions($porperty1, $property2, $property3) {
+    transition: $porperty1 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $property2 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $property3 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @mixin display($display-type, $wrapping, $justification, $gap) {
