@@ -1,12 +1,65 @@
 .footer {
     /* Positioning */
     /* Box Model */
+    padding: 60px 0;
     /* Typography */
     /* Visual */
     background-color: getColor('backgroundHeader');
     /* Misc */
+
+    &__title {
+        /* Positioning */
+        /* Box Model */
+        margin-bottom: 20px;
+        /* Typography */
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        /* Visual */
+        color: getColor('layoutTextSecond');
+        text-transform: uppercase;
+        /* Misc */
+    }
+    
+    &__container {
+        /* Positioning */
+        /* Box Model */
+        @include display(flex, wrap, space-between, 0);
+        /* column-gap: 93px; */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    
+    }
+    
+    &__wrapper {
+        /* Positioning */
+        /* Box Model */
+        padding-top: 15px;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
+
+    &__address {
+        @extend %list;
+    }
+
+    &__logo {
+        @extend .logo;
+        /* Positioning */
+        /* Box Model */
+        display: block;
+        margin-bottom: 10px;
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    }
 }
+
+
 .footer__address-link {
+    @extend %link;
     /* Positioning */
     /* Box Model */
     /* Typography */
@@ -28,24 +81,6 @@
 }
 }
 
-.footer {
-    /* Positioning */
-    /* Box Model */
-    padding: 60px 0;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
-
-.footer__logo {
-    /* Positioning */
-    /* Box Model */
-    display: block;
-    margin-bottom: 10px;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
 
 .footer__address-item:not(:last-child) {
     /* Positioning */
@@ -57,6 +92,7 @@
 }
 
 .footer__social-accounts {
+    @extend %list;
     /* Positioning */
     /* Box Model */
     @include display(flex, wrap, center, 10px);
@@ -66,15 +102,7 @@
 }
 
 .footer__social-account-link {
-    /* Positioning */
-    /* Box Model */
-    /* Typography */
-    /* Visual */
-    background-color: rgba(255, 255, 255, 0.1);
-    /* Misc */
-}
-
-.footer__social-account-link {
+    @extend %link;
     /* Positioning */
     /* Box Model */
     @include display(flex, wrap, center, 0);
@@ -84,7 +112,8 @@
     border-radius: 50%;
     /* Typography */
     /* Visual */
-    color: getColor('iconColor');
+    color: getColor('layoutTextSecond');
+    background-color: rgba(255, 255, 255, 0.1);
     /* Misc */
     @include twoTransitions(color, background-color);
     &:hover,
@@ -93,43 +122,11 @@
     /* Box Model */
     /* Typography */
     /* Visual */
-    color: var(--layout-text-color-third);
-    background-color: var(--layout-text-color-main);
+    color: getColor('layoutTextSecond');
+    background-color: getColor('layoutThemeMain');
     /* Misc */
 
 }
 }
 
-.footer__title {
-    /* Positioning */
-    /* Box Model */
-    margin-bottom: 20px;
-    /* Typography */
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 100%;
-    /* Visual */
-    color: getColor('layoutTextThird');
-    text-transform: uppercase;
-    /* Misc */
-}
 
-.footer__container {
-    /* Positioning */
-    /* Box Model */
-    @include display(flex, wrap, space-between, 0);
-    /* column-gap: 93px; */
-    /* Typography */
-    /* Visual */
-    /* Misc */
-
-}
-
-.footer__wrapper {
-    /* Positioning */
-    /* Box Model */
-    padding-top: 15px;
-    /* Typography */
-    /* Visual */
-    /* Misc */
-}
