@@ -20,7 +20,7 @@
   /* Misc */
 }
 
-.footer__social-accounts, .footer__address, .contacts-list, .nav-list {
+.features, .footer__social-accounts, .footer__address, .contacts-list, .nav-list {
   /* Positioning */
   /* Box Model */
   /* Typography */
@@ -877,7 +877,6 @@ body {
   /* Visual */
   /* Misc */
 }
-
 .features__item {
   /* Positioning */
   /* Box Model */
@@ -887,7 +886,6 @@ body {
   /* Visual */
   /* Misc */
 }
-
 .features__title {
   /* Positioning */
   /* Box Model */
@@ -899,7 +897,6 @@ body {
   /* Visual */
   /* Misc */
 }
-
 .features__description {
   /* Positioning */
   /* Box Model */
@@ -909,10 +906,9 @@ body {
   font-size: 14px;
   line-height: 146%;
   /* Visual */
-  color: var(--layout-text-color-fourth);
+  color: #757575;
   /* Misc */
 }
-
 .features__icon-wrapper {
   /* Positioning */
   /* Box Model */
@@ -922,7 +918,7 @@ body {
   /* Typography */
   text-align: center;
   /* Visual */
-  background: var(--background-color-section-second);
+  background: #F5F4FA;
   /* Misc */
 }
 

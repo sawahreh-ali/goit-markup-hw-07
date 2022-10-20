@@ -72,6 +72,7 @@
 /*---------------------------------------------------------------------------------------------------*/
 
 .features {
+    @extend %list;
     /* Positioning */
     /* Box Model */
     display: flex;
@@ -80,55 +81,56 @@
     /* Typography */
     /* Visual */
     /* Misc */
-}
 
-.features__item {
-    /* Positioning */
-    /* Box Model */
-    width: 270px;
-    /* flex-wrap: nowrap; */
-    /* Typography */
-    /* Visual */
-    /* Misc */
-
-}
-
-.features__title {
-    /* Positioning */
-    /* Box Model */
-    margin-bottom: 9.4px;
-    /* Typography */
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 100%;
-    /* Visual */
-    /* Misc */
-}
-
-.features__description {
-    /* Positioning */
-    /* Box Model */
-    /* width: 270px; */
-    /* Typography */
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 146%;
-    /* Visual */
-    color: var(--layout-text-color-fourth);
-    /* Misc */
-}
-
-.features__icon-wrapper {
-    /* Positioning */
-    /* Box Model */
-    border-radius: 4px;
-    padding: 25px 100px;
-    margin-bottom: 30px;
-    /* Typography */
-    text-align: center;
-    /* Visual */
-    background: var(--background-color-section-second);
-    /* Misc */
+    &__item {
+        /* Positioning */
+        /* Box Model */
+        width: 270px;
+        /* flex-wrap: nowrap; */
+        /* Typography */
+        /* Visual */
+        /* Misc */
+    
+    }
+    
+    &__title {
+        /* Positioning */
+        /* Box Model */
+        margin-bottom: 9.4px;
+        /* Typography */
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        /* Visual */
+        /* Misc */
+    }
+    
+    &__description {
+        /* Positioning */
+        /* Box Model */
+        /* width: 270px; */
+        /* Typography */
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 146%;
+        /* Visual */
+        color: getColor('layoutTextThird');
+        /* Misc */
+    }
+    
+    &__icon-wrapper {
+        /* Positioning */
+        /* Box Model */
+        border-radius: 4px;
+        padding: 25px 100px;
+        margin-bottom: 30px;
+        /* Typography */
+        text-align: center;
+        /* Visual */
+        background: getColor('backgroundSectionSecond');
+        /* Misc */
+    }
+    
 }
 
 /*------------------------------------------WHATWEDO-------------------------------------------------*/
